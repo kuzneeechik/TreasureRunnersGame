@@ -30,8 +30,7 @@ public class PlayerController : MonoBehaviour
     private float wallCheckDistance = 0.1f;
     private int lastDirection = 0;
     private bool blockMoving = false;
-    private bool isGrounded = false;
-
+    
     private void Start()
     {
         animator = GetComponent<Animator>();
