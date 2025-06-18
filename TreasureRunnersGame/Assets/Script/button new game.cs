@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using System.Collections;
 
 public class buttonnewgame : MonoBehaviour
 {
@@ -21,5 +23,9 @@ public class buttonnewgame : MonoBehaviour
             SceneManager.LoadScene("NewGame");
         else
             SceneManager.LoadScene("Book");
+    }
+    public void Setting(GameObject objPrefab)
+    {
+        Instantiate(objPrefab);
     }
 }
