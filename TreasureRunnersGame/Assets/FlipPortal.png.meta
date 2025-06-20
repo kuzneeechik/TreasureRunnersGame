@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: 4dc70befe09be924f882ed68026ad3cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2811043492123576217
+    second: FlipPortal_0
+  - first:
+      213: 8456845836467250630
+    second: FlipPortal_1
+  - first:
+      213: 1551909872472735724
+    second: FlipPortal_2
+  - first:
+      213: 5305416930362949927
+    second: FlipPortal_3
+  - first:
+      213: 874961582426254937
+    second: FlipPortal_4
+  - first:
+      213: -4955322487418836634
+    second: FlipPortal_5
+  - first:
+      213: -4863187829152769814
+    second: FlipPortal_6
+  - first:
+      213: -6845665668942926692
+    second: FlipPortal_7
+  - first:
+      213: 759028765614513872
+    second: FlipPortal_8
+  - first:
+      213: 6525087222831108299
+    second: FlipPortal_9
+  - first:
+      213: -7042467359766434661
+    second: FlipPortal_10
+  - first:
+      213: -3584826130835353983
+    second: FlipPortal_11
+  - first:
+      213: 6275240562489549392
+    second: FlipPortal_12
+  - first:
+      213: 5059668990711920056
+    second: FlipPortal_13
+  - first:
+      213: -4186706681927262769
+    second: FlipPortal_14
+  - first:
+      213: -8375614977511663445
+    second: FlipPortal_15
+  - first:
+      213: 5426179101595773741
+    second: FlipPortal_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlipPortal_9
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 13
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.3290434, y: 0.5091181}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0d94df144cd8a50800000000000000
+      internalID: 6525087222831108299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPortal_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 15
+        width: 21
+        height: 43
+      alignment: 9
+      pivot: {x: 0.3296298, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ca6d6bf31244e90800000000000000
+      internalID: -7042467359766434661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPortal_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 16
+        width: 19
+        height: 42
+      alignment: 9
+      pivot: {x: 0.28658897, y: 0.47728392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e450290a3204ec0800000000000000
+      internalID: -3584826130835353983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPortal_12
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 15
+        width: 30
+        height: 46
+      alignment: 9
+      pivot: {x: 0.348939, y: 0.48962957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052ef4f3b02261750800000000000000
+      internalID: 6275240562489549392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPortal_13
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 14
+        width: 27
+        height: 44
+      alignment: 9
+      pivot: {x: 0.48233145, y: 0.52168363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b57178c32e873640800000000000000
+      internalID: 5059668990711920056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPortal_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 15
+        width: 32
+        height: 43
+      alignment: 9
+      pivot: {x: 0.52735233, y: 0.53053343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd98f47474d5e5c0800000000000000
+      internalID: -4186706681927262769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPortal_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 13
+        width: 27
+        height: 45
+      alignment: 9
+      pivot: {x: 0.54862696, y: 0.52431387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8d9f9cd86d3cb80800000000000000
+      internalID: -8375614977511663445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPortal_16
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 15
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ba34ec429ad4b40800000000000000
+      internalID: 5426179101595773741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c11f8137577e5eb47b09018c2514055e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlipPortal_0: 2811043492123576217
+      FlipPortal_1: 8456845836467250630
+      FlipPortal_10: -7042467359766434661
+      FlipPortal_11: -3584826130835353983
+      FlipPortal_12: 6275240562489549392
+      FlipPortal_13: 5059668990711920056
+      FlipPortal_14: -4186706681927262769
+      FlipPortal_15: -8375614977511663445
+      FlipPortal_16: 5426179101595773741
+      FlipPortal_2: 1551909872472735724
+      FlipPortal_3: 5305416930362949927
+      FlipPortal_4: 874961582426254937
+      FlipPortal_5: -4955322487418836634
+      FlipPortal_6: -4863187829152769814
+      FlipPortal_7: -6845665668942926692
+      FlipPortal_8: 759028765614513872
+      FlipPortal_9: 6525087222831108299
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

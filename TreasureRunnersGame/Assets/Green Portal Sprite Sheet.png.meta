@@ -165,11 +165,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 128
+        y: 132
         width: 32
-        height: 51
+        height: 47
       alignment: 9
-      pivot: {x: 0.6819346, y: 0.5157456}
+      pivot: {x: 0.697289, y: 0.49604958}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
         width: 27
         height: 45
       alignment: 9
-      pivot: {x: 0.44795227, y: 0.48215535}
+      pivot: {x: 0.4587374, y: 0.4917477}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,7 +235,7 @@ TextureImporter:
         width: 32
         height: 43
       alignment: 9
-      pivot: {x: 0.46546555, y: 0.49999964}
+      pivot: {x: 0.45938206, y: 0.50000036}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,7 +257,7 @@ TextureImporter:
         width: 27
         height: 44
       alignment: 9
-      pivot: {x: 0.5477487, y: 0.49999964}
+      pivot: {x: 0.55501866, y: 0.50000036}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,7 +279,7 @@ TextureImporter:
         width: 30
         height: 46
       alignment: 9
-      pivot: {x: 0.67803955, y: 0.5560542}
+      pivot: {x: 0.6918742, y: 0.5565129}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -301,7 +301,7 @@ TextureImporter:
         width: 19
         height: 42
       alignment: 9
-      pivot: {x: 0.695653, y: 0.5402316}
+      pivot: {x: 0.6856866, y: 0.5442109}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -323,7 +323,7 @@ TextureImporter:
         width: 21
         height: 43
       alignment: 9
-      pivot: {x: 0.6287406, y: 0.492141}
+      pivot: {x: 0.64147514, y: 0.50000036}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -362,12 +362,12 @@ TextureImporter:
       name: Green Portal Sprite Sheet_9
       rect:
         serializedVersion: 2
-        x: 15
-        y: 92
-        width: 30
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 18
+        y: 87
+        width: 26
+        height: 18
+      alignment: 9
+      pivot: {x: 0.48556468, y: 0.5312763}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -432,8 +432,8 @@ TextureImporter:
         y: 70
         width: 15
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.55294394, y: 0.50515693}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -472,12 +472,12 @@ TextureImporter:
       name: Green Portal Sprite Sheet_14
       rect:
         serializedVersion: 2
-        x: 335
-        y: 68
+        x: 337
+        y: 67
         width: 31
         height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49613804, y: 0.53112304}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -516,9 +516,9 @@ TextureImporter:
       name: Green Portal Sprite Sheet_16
       rect:
         serializedVersion: 2
-        x: 144
+        x: 143
         y: 90
-        width: 29
+        width: 30
         height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -538,7 +538,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 873b209660314e54e98b2116da973eca
+    spriteID: e52417fb08c90d848bd1badca75e72dc
     internalID: 0
     vertices: []
     indices: 
