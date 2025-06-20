@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public float CheckRadius;
     public LayerMask Ground;
 
-    private Animator animator;
+    public Animator animator;
 
     private float padding = 0.5f;
     private float minX, maxX, maxY;
@@ -30,6 +30,9 @@ public class PlayerController : MonoBehaviour
     private float wallCheckDistance = 0.1f;
     private int lastDirection = 0;
     private bool blockMoving = false;
+
+    public bool isAlive = true;
+    private float deep = -6f;
     
     private void Start()
     {
@@ -43,10 +46,19 @@ public class PlayerController : MonoBehaviour
         minX = bottomLeft.x + padding;
         maxX = topRight.x - padding;
         maxY = topRight.y - padding;
+
+        animator.SetBool("isAlive", true);
     }
 
     private void FixedUpdate()
     {
+        if (!isAlive)
+        {
+            return;
+
+            //меню вылазит
+        }
+
         float Move = 0f;
 
         bool blockLeft = Physics2D.Raycast(transform.position, Vector2.left, wallCheckDistance, Ground);
@@ -118,6 +130,11 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (!isAlive)
+        {
+            return;
+        }
+
         IsGrounded = Physics2D.OverlapCircle(FeetPos.position, CheckRadius, Ground);
 
         if (IsGrounded && Input.GetKeyDown(UpKey))
@@ -126,6 +143,11 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetBool("isJumping", !IsGrounded);
+
+        if (transform.position.y < deep)
+        {
+            isAlive = false;
+        }
     }
 
     void Flip()
