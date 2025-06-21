@@ -11,48 +11,48 @@ public class PlayerController : MonoBehaviour
     public string RightKey;
     public string UpKey;
 
-    private Rigidbody2D rb;
+    private Rigidbody2D Rb;
 
-    private bool facingRight = true;
+    private bool FacingRight = true;
 
     private bool IsGrounded;
     public Transform FeetPos;
     public float CheckRadius;
     public LayerMask Ground;
 
-    public Animator animator;
+    public Animator Animator;
 
-    private float padding = 0.5f;
-    private float minX, maxX, maxY;
+    private float Padding = 0.5f;
+    private float MinX, MaxX, MaxY;
 
-    private Camera mainCamera;
+    private Camera MainCamera;
 
-    private float wallCheckDistance = 0.1f;
-    private int lastDirection = 0;
-    private bool blockMoving = false;
+    private float WallCheckDistance = 0.1f;
+    private int LastDirection = 0;
+    private bool BlockMoving = false;
 
-    public bool isAlive = true;
-    private float deep = -6f;
+    public bool IsAlive = true;
+    private float Deep = -6f;
     
     private void Start()
     {
-        animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-        mainCamera = Camera.main;
+        Animator = GetComponent<Animator>();
+        Rb = GetComponent<Rigidbody2D>();
+        MainCamera = Camera.main;
 
-        Vector2 bottomLeft = mainCamera.ViewportToWorldPoint(new Vector2(0, 0));
-        Vector2 topRight = mainCamera.ViewportToWorldPoint(new Vector2(1, 1));
+        Vector2 bottomLeft = MainCamera.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 topRight = MainCamera.ViewportToWorldPoint(new Vector2(1, 1));
 
-        minX = bottomLeft.x + padding;
-        maxX = topRight.x - padding;
-        maxY = topRight.y - padding;
+        MinX = bottomLeft.x + Padding;
+        MaxX = topRight.x - Padding;
+        MaxY = topRight.y - Padding;
 
-        animator.SetBool("isAlive", true);
+        Animator.SetBool("isAlive", true);
     }
 
     private void FixedUpdate()
     {
-        if (!isAlive)
+        if (!IsAlive)
         {
             return;
 
@@ -61,76 +61,76 @@ public class PlayerController : MonoBehaviour
 
         float Move = 0f;
 
-        bool blockLeft = Physics2D.Raycast(transform.position, Vector2.left, wallCheckDistance, Ground);
-        bool blockRight = Physics2D.Raycast(transform.position, Vector2.right, wallCheckDistance, Ground);
+        bool blockLeft = Physics2D.Raycast(transform.position, Vector2.left, WallCheckDistance, Ground);
+        bool blockRight = Physics2D.Raycast(transform.position, Vector2.right, WallCheckDistance, Ground);
 
         if (Input.GetKey(LeftKey))
         {
             Move = -1f;
 
-            if (lastDirection != -1)
+            if (LastDirection != -1)
             {
-                blockMoving = false;
+                BlockMoving = false;
             }
 
-            lastDirection = -1;
+            LastDirection = -1;
 
             if (blockLeft)
             {
-                blockMoving = true;
+                BlockMoving = true;
             }
         } 
         else if (Input.GetKey(RightKey))
         {
             Move = 1f;
 
-            if (lastDirection != 1)
+            if (LastDirection != 1)
             {
-                blockMoving = false;
+                BlockMoving = false;
             }
 
-            lastDirection = 1;
+            LastDirection = 1;
 
             if (blockRight)
             {
-                blockMoving = true;
+                BlockMoving = true;
             }
         }
         else
         {
-            blockMoving = false;
-            lastDirection = 0;
+            BlockMoving = false;
+            LastDirection = 0;
         }
 
-        if (!blockMoving)
+        if (!BlockMoving)
         {
-            rb.linearVelocity = new Vector2(Move * Speed, rb.linearVelocity.y);
+            Rb.linearVelocity = new Vector2(Move * Speed, Rb.linearVelocity.y);
         }
         else
         {
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            Rb.linearVelocity = new Vector2(0f, Rb.linearVelocity.y);
         }
 
-        animator.SetBool("isRunning", Move != 0);
+        Animator.SetBool("isRunning", Move != 0);
 
-        if (!facingRight && Move > 0)
+        if (!FacingRight && Move > 0)
         {
             Flip();
         }
-        else if (facingRight && Move < 0)
+        else if (FacingRight && Move < 0)
         {
             Flip();
         }
 
-        Vector2 pos = rb.position;
-        pos.x = Mathf.Clamp(pos.x, minX, maxX);
-        pos.y = Mathf.Min(pos.y, maxY);
-        rb.position = pos;
+        Vector2 pos = Rb.position;
+        pos.x = Mathf.Clamp(pos.x, MinX, MaxX);
+        pos.y = Mathf.Min(pos.y, MaxY);
+        Rb.position = pos;
     }
 
     private void Update()
     {
-        if (!isAlive)
+        if (!IsAlive)
         {
             return;
         }
@@ -139,20 +139,20 @@ public class PlayerController : MonoBehaviour
 
         if (IsGrounded && Input.GetKeyDown(UpKey))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForse);
+            Rb.linearVelocity = new Vector2(Rb.linearVelocity.x, JumpForse);
         }
 
-        animator.SetBool("isJumping", !IsGrounded);
+        Animator.SetBool("isJumping", !IsGrounded);
 
-        if (transform.position.y < deep)
+        if (transform.position.y < Deep)
         {
-            isAlive = false;
+            IsAlive = false;
         }
     }
 
     void Flip()
     {
-        facingRight = !facingRight;
+        FacingRight = !FacingRight;
 
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;

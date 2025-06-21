@@ -2,27 +2,27 @@ using UnityEngine;
 
 public class FollowMoving : MonoBehaviour
 {
-    private Transform currentPlatform;
-    private Vector3 lastPlatformPosition;
+    private Transform CurrentPlatform;
+    private Vector3 LastPlatformPosition;
 
     void LateUpdate()
     {
-        if (currentPlatform != null)
+        if (CurrentPlatform != null)
         {
-            Vector3 platformDelta = currentPlatform.position - lastPlatformPosition;
+            Vector3 platformDelta = CurrentPlatform.position - LastPlatformPosition;
             transform.position += platformDelta;
-            lastPlatformPosition = currentPlatform.position;
+            LastPlatformPosition = CurrentPlatform.position;
         }
     }
 
     public void SetPlatform(Transform platform)
     {
-        currentPlatform = platform;
-        lastPlatformPosition = platform.position;
+        CurrentPlatform = platform;
+        LastPlatformPosition = platform.position;
     }
 
     public void ClearPlatform()
     {
-        currentPlatform = null;
+        CurrentPlatform = null;
     }
 }

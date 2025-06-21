@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public Animator animator;
+    public Animator Animator;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        Animator = GetComponent<Animator>();
     }
 }

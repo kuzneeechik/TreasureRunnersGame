@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e91ae7fb04895140803b7ef971db2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1379664683}
+  Door: {fileID: 1379664683}
 --- !u!212 &223446925
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e91ae7fb04895140803b7ef971db2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1464466461}
+  Door: {fileID: 1464466461}
 --- !u!212 &389403459
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1663,6 +1663,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
+  - first: {x: 0, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741826
   - first: {x: 1, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -2365,17 +2375,17 @@ Tilemap:
       m_AllTileFlags: 1073741826
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 50
+  - m_RefCount: 51
     m_Data: {fileID: 11400000, guid: e27b9ad72fd16b6408e1ef29a176d903, type: 2}
   - m_RefCount: 87
     m_Data: {fileID: 11400000, guid: 75d27e4600fa2674298c65dd41a1aab6, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 50
+  - m_RefCount: 51
     m_Data: {fileID: -5639604705652519477, guid: 71b7eef51345ad14f86f178cc085642a, type: 3}
   - m_RefCount: 87
     m_Data: {fileID: 1267164273696548967, guid: 71b7eef51345ad14f86f178cc085642a, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 137
+  - m_RefCount: 138
     m_Data:
       e00: 1
       e01: 0
@@ -2394,7 +2404,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 137
+  - m_RefCount: 138
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -2942,7 +2952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!212 &1379664684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3113,7 +3123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!212 &1464466462
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3723,8 +3733,8 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  animator: {fileID: 0}
-  isAlive: 1
+  Animator: {fileID: 0}
+  IsAlive: 1
 --- !u!212 &1783026376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3938,8 +3948,8 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  animator: {fileID: 0}
-  isAlive: 1
+  Animator: {fileID: 0}
+  IsAlive: 1
 --- !u!212 &1797942777
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
-    private bool isTapped = false;
+    private bool IsTapped = false;
 
-    private GameObject playerInRange = null;
+    private GameObject PlayerInRange = null;
 
-    private Animator animator;
-    public Door door;
+    private Animator Animator;
+    public Door Door;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        Animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (isTapped || playerInRange == null) return;
+        if (IsTapped || PlayerInRange == null) return;
 
-        string tag = playerInRange.tag;
+        string tag = PlayerInRange.tag;
 
         if (tag == "Player1" && Input.GetKeyDown(KeyCode.RightShift))
         {
@@ -32,25 +32,25 @@ public class Lever : MonoBehaviour
 
     private void ActivateLever()
     {
-        animator.SetBool("isTapped", true);
-        door.animator.SetBool("isOpen", true);
+        Animator.SetBool("isTapped", true);
+        Door.Animator.SetBool("isOpen", true);
 
-        isTapped = true;
+        IsTapped = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player1") || other.CompareTag("Player2"))
         {
-            playerInRange = other.gameObject;
+            PlayerInRange = other.gameObject;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (playerInRange == other.gameObject)
+        if (PlayerInRange == other.gameObject)
         {
-            playerInRange = null;
+            PlayerInRange = null;
         }
     }
 }
