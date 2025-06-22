@@ -9,9 +9,22 @@ public class Lever : MonoBehaviour
     private Animator Animator;
     public Door Door;
 
+    public string Id;
+
     private void Start()
     {
         Animator = GetComponent<Animator>();
+
+        if (SaveLevel.Instance != null && SaveLevel.Instance.Levers.Contains(Id))
+        {
+            IsTapped = true;
+            Animator.SetBool("isTapped", true);
+
+            if (Door != null)
+            {
+                Door.Animator.SetBool("isOpen", true);
+            }
+        }
     }
 
     private void Update()
@@ -36,6 +49,11 @@ public class Lever : MonoBehaviour
         Door.Animator.SetBool("isOpen", true);
 
         IsTapped = true;
+
+        if (SaveLevel.Instance != null)
+        {
+            SaveLevel.Instance.Levers.Add(Id);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

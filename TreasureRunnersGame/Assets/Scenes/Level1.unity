@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Id: WoodenShield
 --- !u!1 &27270246
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
+  Animator: {fileID: 171665231}
 --- !u!95 &171665231
 Animator:
   serializedVersion: 7
@@ -1201,6 +1202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 171665230}
+  Id: Lever_1.2
 --- !u!1 &619720330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,7 +1740,7 @@ Transform:
   m_GameObject: {fileID: 892741132}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.38, y: -1.43, z: -0.009197775}
+  m_LocalPosition: {x: -9.05, y: -3.6, z: -0.009197775}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1806,7 +1808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
+  Animator: {fileID: 1007139616}
 --- !u!95 &1007139616
 Animator:
   serializedVersion: 7
@@ -1899,6 +1901,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.881}
+--- !u!1 &1035197329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1035197331}
+  - component: {fileID: 1035197330}
+  m_Layer: 0
+  m_Name: SaveLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1035197330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035197329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c80e1f6c9cec1546b528eff362a5b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player1Position: {x: 0, y: 0, z: 0}
+  Player2Position: {x: 0, y: 0, z: 0}
+  IsSave: 0
+  Player1Pulled: 0
+  Player2Pulled: 0
+--- !u!4 &1035197331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035197329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.8, y: -4.2, z: -0.006850546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058607428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,6 +2560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 1007139615}
+  Id: Lever_1.1
 --- !u!1 &1426128276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,8 +2714,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.98, y: 1.5}
+  m_Offset: {x: 0.007475853, y: -0.011214554}
+  m_Size: {x: 0.5762787, y: 1.3429977}
   m_Direction: 0
 --- !u!114 &1426128281
 MonoBehaviour:
@@ -2981,7 +3033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f18d3d34e782464eba0d6d34f9b096e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
+  Animator: {fileID: 1508790113}
 --- !u!1 &1627864900
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,6 +3254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Id: Book3
 --- !u!1 &1746424511
 GameObject:
   m_ObjectHideFlags: 0
@@ -3457,8 +3510,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.02, y: 1.44}
+  m_Offset: {x: 0.037807465, y: 0.0068739653}
+  m_Size: {x: 0.62817574, y: 1.3162663}
   m_Direction: 0
 --- !u!114 &1832313732
 MonoBehaviour:
@@ -5684,3 +5737,4 @@ SceneRoots:
   - {fileID: 1346927856}
   - {fileID: 892741134}
   - {fileID: 1746424515}
+  - {fileID: 1035197331}

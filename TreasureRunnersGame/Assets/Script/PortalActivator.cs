@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PortalActivator : MonoBehaviour
@@ -23,6 +24,39 @@ public class PortalActivator : MonoBehaviour
         {
             Portal.SetActive(false);
         }
+
+        if (SaveLevel.Instance != null && SaveLevel.Instance.IsSave)
+        {
+            SaveLevel.Instance.RestorePlayerPositions(Player1, Player2);
+
+            StartCoroutine(PlayerActivation());
+
+            if (Portal != null)
+            {
+                Portal.SetActive(true);
+            }
+
+            if (CurrentPortal?.Animator != null)
+            {
+                CurrentPortal.Animator.SetBool("isFull", false);
+            }
+
+            if (SaveLevel.Instance.IsReturn)
+            {
+                IsActive = false;
+                LoadScene = true;
+            }
+            else
+            {
+                IsActive = true;
+                LoadScene = false;
+            }
+
+            SaveLevel.Instance.IsSave = false;
+            SaveLevel.Instance.IsReturn = false;
+            SaveLevel.Instance.Player1Pulled = false;
+            SaveLevel.Instance.Player2Pulled = false;
+        }
     }
 
     private void Update()
@@ -38,19 +72,30 @@ public class PortalActivator : MonoBehaviour
 
         if (IsActive)
         {
-            if (Vector2.Distance(transform.position, Player1.position) < Distance)
+            if (!Player1Pulled && Vector2.Distance(transform.position, Player1.position) < Distance)
             {
                 PullingIntoPortal(Player1, ref Player1Pulled);
             }
-            else if (Vector2.Distance(transform.position,Player2.position) < Distance)
+            if (!Player2Pulled && Vector2.Distance(transform.position, Player2.position) < Distance)
             {
                 PullingIntoPortal(Player2, ref Player2Pulled);
             }
 
-            if (Player1Pulled &&  Player2Pulled && !LoadScene)
+            if (Player1Pulled && Player2Pulled && !LoadScene)
             {
                 LoadScene = true;
-                Invoke("LoadNextScene", 1f);
+
+                SaveLevel.Instance?.SavePlayerPositions(Player1.position, Player2.position);
+
+                SaveLevel.Instance.IsSave = true;
+                SaveLevel.Instance.IsReturn = false;
+
+                if (CurrentPortal?.Animator != null)
+                {
+                    CurrentPortal.Animator.SetBool("isFull", false);
+                }
+
+                Invoke("LoadNextScene", 0.5f);
             }
         }
     }
@@ -77,6 +122,13 @@ public class PortalActivator : MonoBehaviour
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("SplitLevel1");
         }
+    }
+
+    private IEnumerator PlayerActivation()
+    {
+        yield return null;
+        Player1.gameObject.SetActive(true);
+        Player2.gameObject.SetActive(true);
     }
 }
 
