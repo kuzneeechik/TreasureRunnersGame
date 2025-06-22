@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject gameOverCanvas;
     public float Speed;
     public float JumpForse;
     private float Move;
@@ -54,9 +55,8 @@ public class PlayerController : MonoBehaviour
     {
         if (!isAlive)
         {
+            Die();
             return;
-
-            //меню вылазит
         }
 
         float Move = 0f;
@@ -146,7 +146,18 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.y < deep)
         {
-            isAlive = false;
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        isAlive = false;
+        animator.SetBool("isAlive", false);
+        
+        if (gameOverCanvas != null)
+        {
+            gameOverCanvas.SetActive(true);
         }
     }
 
