@@ -152,8 +152,8 @@ public class PlayerController : MonoBehaviour
 
     private void Die()
     {
-        isAlive = false;
-        animator.SetBool("isAlive", false);
+        IsAlive = false;
+        Animator.SetBool("isAlive", false);
         
         if (gameOverCanvas != null)
         {

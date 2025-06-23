@@ -32,12 +32,12 @@ public class DoubleLever : MonoBehaviour
         if (tapCount == 1)
         {
             animator.SetBool("isTapped", true);
-            door.animator.SetBool("isOpen", true);
+            door.Animator.SetBool("isOpen", true);
         }
         else if (tapCount == 2)
         {
             animator.SetBool("isTapped", false);
-            door.animator.SetBool("isOpen", false);
+            door.Animator.SetBool("isOpen", false);
         }
     }
 
