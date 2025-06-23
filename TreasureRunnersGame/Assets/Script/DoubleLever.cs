@@ -7,6 +7,8 @@ public class DoubleLever : MonoBehaviour
     private Animator animator;
     public Door door;
 
+    public string Id;
+
     private void Start()
     {
         animator = GetComponent<Animator>();

@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  Animator: {fileID: 310423823}
 --- !u!95 &310423823
 Animator:
   serializedVersion: 7
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  Animator: {fileID: 415237645}
 --- !u!61 &415237649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -834,7 +834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e91ae7fb04895140803b7ef971db2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 415237648}
+  Door: {fileID: 415237648}
+  Id: 
 --- !u!61 &605186235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -985,7 +986,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e91ae7fb04895140803b7ef971db2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1432349240}
+  Door: {fileID: 1432349240}
+  Id: 
 --- !u!114 &605186240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -998,7 +1000,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e91ae7fb04895140803b7ef971db2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 310423822}
+  Door: {fileID: 310423822}
+  Id: 
 --- !u!1 &621733681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,6 +1408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Id: 
 --- !u!61 &861516865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1609,8 +1613,8 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  animator: {fileID: 0}
-  isAlive: 1
+  Animator: {fileID: 0}
+  IsAlive: 1
 --- !u!50 &863448357
 Rigidbody2D:
   serializedVersion: 5
@@ -1940,7 +1944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e91ae7fb04895140803b7ef971db2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1859688876}
+  Door: {fileID: 1859688876}
+  Id: 
 --- !u!61 &1114637142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2156,6 +2161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Id: 
 --- !u!61 &1141278062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2470,8 +2476,8 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  animator: {fileID: 0}
-  isAlive: 1
+  Animator: {fileID: 0}
+  IsAlive: 1
 --- !u!50 &1343245439
 Rigidbody2D:
   serializedVersion: 5
@@ -2639,7 +2645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  Animator: {fileID: 1432349241}
 --- !u!95 &1432349241
 Animator:
   serializedVersion: 7
@@ -5436,7 +5442,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e91ae7fb04895140803b7ef971db2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1986444881}
+  Door: {fileID: 1986444881}
+  Id: 
 --- !u!61 &1758372655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5709,7 +5716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  Animator: {fileID: 1859688877}
 --- !u!95 &1859688877
 Animator:
   serializedVersion: 7
@@ -6014,7 +6021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  Animator: {fileID: 1986444882}
 --- !u!95 &1986444882
 Animator:
   serializedVersion: 7

@@ -174,6 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
   Speed: 4
   JumpForse: 5
   LeftKey: left
@@ -184,8 +185,8 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  animator: {fileID: 0}
-  isAlive: 1
+  Animator: {fileID: 0}
+  IsAlive: 1
 --- !u!50 &55057175
 Rigidbody2D:
   serializedVersion: 5
@@ -415,7 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  Animator: {fileID: 142003549}
 --- !u!95 &142003549
 Animator:
   serializedVersion: 7
@@ -660,7 +661,7 @@ Transform:
   m_GameObject: {fileID: 207230062}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.02, y: -0.95, z: 0}
+  m_LocalPosition: {x: 0.99, y: -1.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -678,6 +679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Id: 
 --- !u!61 &207230067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -848,6 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Id: 
 --- !u!61 &279815742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -907,7 +910,7 @@ GameObject:
   - component: {fileID: 432314913}
   - component: {fileID: 432314912}
   m_Layer: 0
-  m_Name: thorns1 (1)
+  m_Name: thorns3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1035,8 +1038,8 @@ Transform:
   m_GameObject: {fileID: 432314911}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.08, y: -4.79, z: 0}
-  m_LocalScale: {x: 1.2563341, y: 1, z: 1}
+  m_LocalPosition: {x: -0.9477, y: -4.888, z: 0}
+  m_LocalScale: {x: 1.044406, y: 0.8337, z: 0.8337}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1164,7 +1167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8283f5f643c3a947b2255c98e821d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Level3_2
 --- !u!95 &486224026
 Animator:
   serializedVersion: 7
@@ -1270,7 +1272,7 @@ GameObject:
   - component: {fileID: 559247363}
   - component: {fileID: 559247362}
   m_Layer: 0
-  m_Name: thorns1 (2)
+  m_Name: thorns4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1398,8 +1400,8 @@ Transform:
   m_GameObject: {fileID: 559247361}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8, y: -4.78, z: 0}
-  m_LocalScale: {x: 1.2563341, y: 1, z: 1}
+  m_LocalPosition: {x: -2.379, y: -4.896, z: 0}
+  m_LocalScale: {x: 1.0442649, y: 0.8312, z: 0.8312}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1629,7 +1631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8283f5f643c3a947b2255c98e821d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Level3_2
 --- !u!95 &825066719
 Animator:
   serializedVersion: 7
@@ -1754,7 +1755,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e91ae7fb04895140803b7ef971db2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 142003548}
+  Door: {fileID: 142003548}
+  Id: 
 --- !u!61 &1113542028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1948,6 +1950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
   Speed: 4
   JumpForse: 5
   LeftKey: a
@@ -1958,8 +1961,8 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  animator: {fileID: 0}
-  isAlive: 1
+  Animator: {fileID: 0}
+  IsAlive: 1
 --- !u!50 &1402918202
 Rigidbody2D:
   serializedVersion: 5
@@ -2628,7 +2631,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
-  - first: {x: -6, y: -8, z: 0}
+  - first: {x: -5, y: -8, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -2708,11 +2711,11 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
-  - first: {x: -3, y: -6, z: 0}
+  - first: {x: -2, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3518,16 +3521,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
-  - first: {x: -8, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741826
   - first: {x: 1, y: 5, z: 0}
     second:
       serializedVersion: 2
@@ -3538,7 +3531,17 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
-  - first: {x: -4, y: 6, z: 0}
+  - first: {x: -9, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741826
+  - first: {x: -5, y: 6, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -3700,14 +3703,14 @@ Tilemap:
       m_AllTileFlags: 1073741826
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 71
+  - m_RefCount: 70
     m_Data: {fileID: 11400000, guid: e27b9ad72fd16b6408e1ef29a176d903, type: 2}
-  - m_RefCount: 76
+  - m_RefCount: 77
     m_Data: {fileID: 11400000, guid: 75d27e4600fa2674298c65dd41a1aab6, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 71
+  - m_RefCount: 70
     m_Data: {fileID: -5639604705652519477, guid: 71b7eef51345ad14f86f178cc085642a, type: 3}
-  - m_RefCount: 76
+  - m_RefCount: 77
     m_Data: {fileID: 1267164273696548967, guid: 71b7eef51345ad14f86f178cc085642a, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 147
@@ -4013,6 +4016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1741492124}
+  Id: 
 --- !u!1 &1741492123
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,7 +4049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  Animator: {fileID: 1741492125}
 --- !u!95 &1741492125
 Animator:
   serializedVersion: 7
