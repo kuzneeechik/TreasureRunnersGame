@@ -6,6 +6,7 @@ public class SplitPortal : MonoBehaviour
     public Portal Portal;
     public float Distance;
     public float Speed;
+    public string nextScene;
 
     private bool IsPulled = false;
     private bool LoadScene = false;
@@ -30,7 +31,7 @@ public class SplitPortal : MonoBehaviour
             SaveLevel.Instance.IsSave = true;
             SaveLevel.Instance.IsReturn = true;
 
-            Invoke("LoadNextScene", 0.5f);
+            Invoke("LoadNextScene", 1f);
         }
     }
 
@@ -60,11 +61,11 @@ public class SplitPortal : MonoBehaviour
     {
         if (ChangeScene != null)
         {
-            ChangeScene.SwapScene("Level1");
+            ChangeScene.SwapScene(nextScene);
         }
         else
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
         }
     }
 }

@@ -1758,6 +1758,7 @@ MonoBehaviour:
   CurrentPortal: {fileID: 1508790114}
   Distance: 1
   Speed: 1
+  nextScene: SplitLevel1
   ChangeScene: {fileID: 892741133}
 --- !u!4 &619720332
 Transform:
