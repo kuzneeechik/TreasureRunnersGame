@@ -128,8 +128,23 @@ public class PlayerController : MonoBehaviour
         Rb.position = pos;
     }
 
+    private void ShowGameOverCanvas()
+    {
+        if (gameOverCanvas != null)
+        {
+            gameOverCanvas.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
+
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ShowGameOverCanvas();
+            return;
+        }
+
         if (!IsAlive)
         {
             return;
@@ -154,10 +169,10 @@ public class PlayerController : MonoBehaviour
     {
         IsAlive = false;
         Animator.SetBool("isAlive", false);
-        
-        if (gameOverCanvas != null)
+        ShowGameOverCanvas();
+        if (SaveLevel.Instance != null)
         {
-            gameOverCanvas.SetActive(true);
+            SaveLevel.Instance.ResetLevel();
         }
     }
 

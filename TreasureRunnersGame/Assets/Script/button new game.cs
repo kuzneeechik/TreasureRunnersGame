@@ -34,10 +34,12 @@ public class buttonnewgame : MonoBehaviour
     }
     public void Level1()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Level1");
     }
     public void ReturnL3()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Level3");
     }
 }
