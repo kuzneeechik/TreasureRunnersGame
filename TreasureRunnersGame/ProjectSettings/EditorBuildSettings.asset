@@ -10,10 +10,16 @@ EditorBuildSettings:
     guid: a3d0ad1bc46e1ba479157c2738bc9e4f
   - enabled: 1
     path: Assets/Scenes/NewGame.unity
-    guid: eade632d7f7b4a543976dd898cc93d57
+    guid: 8cf484c7ac6e65d4c83c647399f711dc
   - enabled: 1
     path: Assets/Scenes/Book.unity
     guid: a21a6a012c429a44895810265fd54b53
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: df24ea5b4ba938941bf5057cc4b811cd
+  - enabled: 1
+    path: Assets/Scenes/SplitLevel1.unity
+    guid: bc52e17d5f1d749459b74ee72b42e629
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: 7c796ddeba34aff439acc2666f81fd57

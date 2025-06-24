@@ -1238,6 +1238,7 @@ MonoBehaviour:
   CurrentPortal: {fileID: 1508790114}
   Distance: 1
   Speed: 1
+  nextScene: SplitLevel1
   ChangeScene: {fileID: 892741133}
 --- !u!4 &619720332
 Transform:
@@ -1933,6 +1934,7 @@ MonoBehaviour:
   Player1Position: {x: 0, y: 0, z: 0}
   Player2Position: {x: 0, y: 0, z: 0}
   IsSave: 0
+  IsReturn: 0
   Player1Pulled: 0
   Player2Pulled: 0
 --- !u!4 &1035197331
@@ -2729,6 +2731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
   Speed: 4
   JumpForse: 5
   LeftKey: a
@@ -3525,6 +3528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
   Speed: 4
   JumpForse: 5
   LeftKey: left

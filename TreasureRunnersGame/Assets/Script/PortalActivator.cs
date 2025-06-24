@@ -10,6 +10,7 @@ public class PortalActivator : MonoBehaviour
     public Portal CurrentPortal;
     public float Distance;
     public float Speed;
+    public string nextScene;
 
     private bool IsActive = false;
     private bool Player1Pulled = false;
@@ -95,7 +96,7 @@ public class PortalActivator : MonoBehaviour
                     CurrentPortal.Animator.SetBool("isFull", false);
                 }
 
-                Invoke("LoadNextScene", 0.5f);
+                Invoke("LoadNextScene", 1f);
             }
         }
     }
@@ -116,11 +117,11 @@ public class PortalActivator : MonoBehaviour
     {
         if (ChangeScene != null)
         {
-            ChangeScene.SwapScene("SplitLevel1");
+            ChangeScene.SwapScene(nextScene);
         }
         else
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("SplitLevel1");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
         }
     }
 

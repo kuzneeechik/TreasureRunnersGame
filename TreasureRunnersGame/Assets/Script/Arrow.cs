@@ -4,7 +4,7 @@ public class Arrow : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Exit"))
+        if (other.CompareTag("Exit") || other.CompareTag("Ground"))
         {
             Destroy(gameObject);
         }
