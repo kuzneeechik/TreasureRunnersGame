@@ -7,7 +7,6 @@ public class SaveLevel : MonoBehaviour
 
     public HashSet<string> Levers = new HashSet<string>();
     public HashSet<string> Artifacts = new HashSet<string>();
-    public HashSet<string> Doors = new HashSet<string>();
 
     public Vector3 Player1Position;
     public Vector3 Player2Position;
@@ -50,7 +49,6 @@ public class SaveLevel : MonoBehaviour
     {
         Levers.Clear();
         Artifacts.Clear();
-        Doors.Clear();
         IsSave = false;
         IsReturn = false;
     }
