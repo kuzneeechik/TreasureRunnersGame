@@ -169,7 +169,7 @@ public class PlayerController : MonoBehaviour
     {
         IsAlive = false;
         Animator.SetBool("isAlive", false);
-        ShowGameOverCanvas();
+        Invoke("ShowGameOverCanvas", 2.5f);
         if (SaveLevel.Instance != null)
         {
             SaveLevel.Instance.ResetLevel();
