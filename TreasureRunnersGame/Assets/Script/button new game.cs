@@ -28,6 +28,14 @@ public class buttonnewgame : MonoBehaviour
     {
         Instantiate(objPrefab);
     }
+    public void Continue()
+    {
+        SceneManager.LoadScene("NewGame");
+    }
+    public void Level1()
+    {
+        SceneManager.LoadScene("Level1");
+    }
     public void ReturnL3()
     {
         SceneManager.LoadScene("Level3");
