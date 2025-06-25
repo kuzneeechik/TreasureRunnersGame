@@ -23,13 +23,22 @@ public class SaveLevel : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
     }
+
+    public void AddArtifact(string artifactId)
+    {
+        if (!Artifacts.Contains(artifactId))
+        {
+            Artifacts.Add(artifactId);
+        }
+    }
+
 
     public void SavePlayerPositions(Vector3 player1, Vector3 player2)
     {

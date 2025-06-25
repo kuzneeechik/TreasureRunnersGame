@@ -891,7 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 
+  Id: Bow
 --- !u!61 &207230067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1195,7 +1195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 
+  Id: Hat
 --- !u!61 &279815742
 BoxCollider2D:
   m_ObjectHideFlags: 0

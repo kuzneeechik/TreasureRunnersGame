@@ -19,10 +19,12 @@ public class buttonnewgame : MonoBehaviour
     }
     public void Book()
     {
-        if (IsBookSceneActive()) 
+        if (IsBookSceneActive())
             SceneManager.LoadScene("NewGame");
         else
+        {
             SceneManager.LoadScene("Book");
+        }
     }
     public void Setting(GameObject objPrefab)
     {
