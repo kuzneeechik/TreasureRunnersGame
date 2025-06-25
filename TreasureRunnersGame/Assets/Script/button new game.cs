@@ -37,11 +37,19 @@ public class buttonnewgame : MonoBehaviour
     public void Level1()
     {
         Time.timeScale = 1f;
+        SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("Level1");
+    }
+    public void Level2()
+    {
+        Time.timeScale = 1f;
+        SaveLevel.Instance?.ResetLevel();
+        SceneManager.LoadScene("Level2");
     }
     public void ReturnL3()
     {
         Time.timeScale = 1f;
+        SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("Level3");
     }
 }
