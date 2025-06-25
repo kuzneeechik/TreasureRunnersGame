@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SplitLevel1.unity
     guid: bc52e17d5f1d749459b74ee72b42e629
   - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 99cc91bfc07268b41848513942bc7dbb
+  - enabled: 1
+    path: Assets/Scenes/SplitLevel2.unity
+    guid: 2004493d0e1182345ad11b0ebe05e355
+  - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: 7c796ddeba34aff439acc2666f81fd57
   - enabled: 1
