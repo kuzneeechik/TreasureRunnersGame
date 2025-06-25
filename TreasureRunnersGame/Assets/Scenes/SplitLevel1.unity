@@ -4757,7 +4757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 
+  Id: Hammer
 --- !u!61 &1752851405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5582,7 +5582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e733f6500978048b06989bbe89386f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 
+  Id: Iron Boot
 --- !u!58 &1811056118
 CircleCollider2D:
   m_ObjectHideFlags: 0
