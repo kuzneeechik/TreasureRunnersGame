@@ -6,12 +6,11 @@ public class SaveLevel : MonoBehaviour
 {
     public static SaveLevel Instance;
 
-    public HashSet<string> Artifacts = new HashSet<string>();
+    public HashSet<string> ArtifactsBook = new HashSet<string>();
     public HashSet<string> Levels = new HashSet<string>();
 
     public HashSet<string> Levers = new HashSet<string>();
-    //public HashSet<string> LocalArtifacts = new HashSet<string>();
-    public HashSet<string> ArtifactsBook = new HashSet<string>();
+    public HashSet<string> LocalArtifacts = new HashSet<string>();
 
     public Vector3 Player1Position;
     public Vector3 Player2Position;
@@ -49,22 +48,22 @@ public class SaveLevel : MonoBehaviour
 
     public void AddArtifact(string artifactId)
     {
-        if (!Artifacts.Contains(artifactId))
+        if (!LocalArtifacts.Contains(artifactId))
         {
-            Artifacts.Add(artifactId);
+            LocalArtifacts.Add(artifactId);
         }
     }
-    //
+
     public void MoveArtifactsToGlobal()
     {
-        foreach (var artifact in Artifacts)
+        foreach (var artifact in LocalArtifacts)
         {
             if (!ArtifactsBook.Contains(artifact))
             {
                 ArtifactsBook.Add(artifact);
             }
         }
-        Artifacts.Clear();
+        LocalArtifacts.Clear();
     }
 
     public void AddLevel(string levelId)
@@ -93,7 +92,7 @@ public class SaveLevel : MonoBehaviour
     public void ResetLevel()
     {
         Levers.Clear();
-        //LocalArtifacts.Clear();
+        LocalArtifacts.Clear();
 
         IsSave = false;
         IsReturn = false;
@@ -105,8 +104,8 @@ public class SaveLevel : MonoBehaviour
     public void ResetAll()
     {
         Levers.Clear();
-        //LocalArtifacts.Clear();
-        Artifacts.Clear();
+        LocalArtifacts.Clear();
+        ArtifactsBook.Clear();
         Levels.Clear();
 
         IsSave = false;
@@ -126,7 +125,7 @@ public class SaveLevel : MonoBehaviour
     {
         var data = new SaveData
         {
-            Artifacts = new List<string>(Artifacts),
+            Artifacts = new List<string>(ArtifactsBook),
             Levels = new List<string>(Levels),
         };
 
@@ -145,10 +144,10 @@ public class SaveLevel : MonoBehaviour
         var data = JsonUtility.FromJson<SaveData>(json);
 
         Levers.Clear();
-        Artifacts.Clear();
+        ArtifactsBook.Clear();
         Levels.Clear();
 
-        Artifacts = new HashSet<string>(data.Artifacts);
+        ArtifactsBook = new HashSet<string>(data.Artifacts);
         Levels = new HashSet<string>(data.Levels);
     }
 }
