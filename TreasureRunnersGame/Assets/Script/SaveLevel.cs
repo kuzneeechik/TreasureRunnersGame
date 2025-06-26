@@ -7,6 +7,7 @@ public class SaveLevel : MonoBehaviour
 
     public HashSet<string> Levers = new HashSet<string>();
     public HashSet<string> Artifacts = new HashSet<string>();
+    public HashSet<string> ArtifactsBook = new HashSet<string>();
 
     public Vector3 Player1Position;
     public Vector3 Player2Position;
@@ -38,6 +39,17 @@ public class SaveLevel : MonoBehaviour
         }
     }
 
+    public void MoveArtifactsToGlobal()
+    {
+        foreach (var artifact in Artifacts)
+        {
+            if (!ArtifactsBook.Contains(artifact))
+            {
+                ArtifactsBook.Add(artifact);
+            }
+        }
+        Artifacts.Clear();
+    }
 
     public void SavePlayerPositions(Vector3 player1, Vector3 player2)
     {
@@ -62,3 +74,5 @@ public class SaveLevel : MonoBehaviour
         IsReturn = false;
     }
 }
+
+
