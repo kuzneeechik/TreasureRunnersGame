@@ -10,7 +10,8 @@ public class SaveLevel : MonoBehaviour
     public HashSet<string> Levels = new HashSet<string>();
 
     public HashSet<string> Levers = new HashSet<string>();
-    public HashSet<string> LocalArtifacts = new HashSet<string>();
+    //public HashSet<string> LocalArtifacts = new HashSet<string>();
+    public HashSet<string> ArtifactsBook = new HashSet<string>();
 
     public Vector3 Player1Position;
     public Vector3 Player2Position;
@@ -50,9 +51,20 @@ public class SaveLevel : MonoBehaviour
     {
         if (!Artifacts.Contains(artifactId))
         {
-            LocalArtifacts.Add(artifactId);
             Artifacts.Add(artifactId);
         }
+    }
+    //
+    public void MoveArtifactsToGlobal()
+    {
+        foreach (var artifact in Artifacts)
+        {
+            if (!ArtifactsBook.Contains(artifact))
+            {
+                ArtifactsBook.Add(artifact);
+            }
+        }
+        Artifacts.Clear();
     }
 
     public void AddLevel(string levelId)
@@ -81,7 +93,7 @@ public class SaveLevel : MonoBehaviour
     public void ResetLevel()
     {
         Levers.Clear();
-        LocalArtifacts.Clear();
+        //LocalArtifacts.Clear();
 
         IsSave = false;
         IsReturn = false;
@@ -93,7 +105,7 @@ public class SaveLevel : MonoBehaviour
     public void ResetAll()
     {
         Levers.Clear();
-        LocalArtifacts.Clear();
+        //LocalArtifacts.Clear();
         Artifacts.Clear();
         Levels.Clear();
 

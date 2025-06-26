@@ -13,6 +13,11 @@ public class buttonnewgame : MonoBehaviour
 
         SceneManager.LoadScene("NewGame");
     }
+    public void ContinueMenu()
+    {
+        SaveLevel.Instance.LoadFromDisk();
+        SceneManager.LoadScene("NewGame");
+    }
     public void Back()
     {
         SaveLevel.Instance.SaveToDisk();
@@ -34,8 +39,6 @@ public class buttonnewgame : MonoBehaviour
     }
     public void Continue()
     {
-        SaveLevel.Instance.LoadFromDisk();
-
         SceneManager.LoadScene("NewGame");
     }
     public void Level1()

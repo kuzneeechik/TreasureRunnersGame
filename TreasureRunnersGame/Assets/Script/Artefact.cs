@@ -19,6 +19,7 @@ public class Artefact : MonoBehaviour
             if (SaveLevel.Instance != null)
             {
                 SaveLevel.Instance.AddArtifact(Id);
+                //SaveLevel.Instance.Artifacts.Add(Id);
             }
 
             Destroy(gameObject);

@@ -11,7 +11,7 @@ public class ArtefactParentManager : MonoBehaviour
             Artefact_ID artefact = child.GetComponent<Artefact_ID>();
             if (artefact == null) continue;
 
-            bool shouldBeActive = SaveLevel.Instance.Artifacts.Contains(artefact.Id);
+            bool shouldBeActive = SaveLevel.Instance.ArtifactsBook.Contains(artefact.Id);
 
             child.gameObject.SetActive(shouldBeActive);
 

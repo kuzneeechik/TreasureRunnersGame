@@ -3090,7 +3090,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 105495789}
         m_TargetAssemblyTypeName: buttonnewgame, Assembly-CSharp
-        m_MethodName: NewGame
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3915,7 +3915,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 105495789}
         m_TargetAssemblyTypeName: buttonnewgame, Assembly-CSharp
-        m_MethodName: NewGame
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4159,7 +4159,7 @@ Transform:
   m_GameObject: {fileID: 1343245436}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.18, y: -4.5, z: 0}
+  m_LocalPosition: {x: -0.7, y: -4.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7206,6 +7206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winUI: {fileID: 815894305}
+  Id: level4
 --- !u!61 &1664518727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7990,7 +7991,7 @@ Animator:
   m_GameObject: {fileID: 1986444880}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 32c01e624f9f26c4eb6d19fa8c4d3ff6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d68912fe4ba4844590ddc26f3a5bc7d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8128,6 +8129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059910410}
   - component: {fileID: 2059910411}
+  - component: {fileID: 2059910412}
   m_Layer: 0
   m_Name: Artefact level3
   m_TagString: Untagged
@@ -8172,6 +8174,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35029a6d8e4d363479444b67193d015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2059910412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059910409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question1: {fileID: 1021769016}
+  question2: {fileID: 1644730527}
+  question3: {fileID: 2082102583}
+  question4: {fileID: 693279247}
+  question5: {fileID: 364300063}
+  bonus: {fileID: 1391075546}
 --- !u!1 &2082102583
 GameObject:
   m_ObjectHideFlags: 0

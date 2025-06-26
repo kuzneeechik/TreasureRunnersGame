@@ -4,7 +4,8 @@ using UnityEngine.UI;
 
 public class End : MonoBehaviour
 {
-    public GameObject winUI; 
+    public GameObject winUI;
+    public string Id;
 
     private bool player1Inside = false;
     private bool player2Inside = false;
@@ -66,5 +67,7 @@ public class End : MonoBehaviour
     {
         winUI.SetActive(true);
         Time.timeScale = 0;
+        SaveLevel.Instance.AddLevel(Id);
+        SaveLevel.Instance.MoveArtifactsToGlobal();
     }
 }

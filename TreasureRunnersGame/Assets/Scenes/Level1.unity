@@ -452,6 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 61322273}
   - component: {fileID: 61322274}
+  - component: {fileID: 61322275}
   m_Layer: 0
   m_Name: Artefact level1
   m_TagString: Untagged
@@ -496,6 +497,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35029a6d8e4d363479444b67193d015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &61322275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61322272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question1: {fileID: 1943396303}
+  question2: {fileID: 1732125851}
+  question3: {fileID: 27074609}
+  question4: {fileID: 865353026}
+  question5: {fileID: 1243074531}
+  bonus: {fileID: 1176598363}
 --- !u!1 &97154234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,7 +1158,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 214496321}
         m_TargetAssemblyTypeName: buttonnewgame, Assembly-CSharp
-        m_MethodName: NewGame
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8018,7 +8037,7 @@ Transform:
   m_GameObject: {fileID: 2034526037}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.22, y: -4.1, z: 0}
+  m_LocalPosition: {x: -3.23, y: -4.06, z: 0}
   m_LocalScale: {x: 1.7602661, y: 1.7602661, z: 1.7602661}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8083,6 +8102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winUI: {fileID: 1466851508}
+  Id: level2
 --- !u!1 &2139498918
 GameObject:
   m_ObjectHideFlags: 0
