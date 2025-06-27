@@ -671,7 +671,7 @@ Transform:
   m_GameObject: {fileID: 178712931}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.791, y: 4.438, z: 0}
+  m_LocalPosition: {x: 8.01, y: 4.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -874,7 +874,7 @@ Transform:
   m_GameObject: {fileID: 181106065}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.777, y: 4.464, z: 0}
+  m_LocalPosition: {x: -8.62, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -891,6 +891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 195248954}
   - component: {fileID: 195248955}
+  - component: {fileID: 195248956}
   m_Layer: 0
   m_Name: Artefact level2
   m_TagString: Untagged
@@ -935,6 +936,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35029a6d8e4d363479444b67193d015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &195248956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195248953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question1: {fileID: 571188378}
+  question2: {fileID: 654282610}
+  question3: {fileID: 806731806}
+  question4: {fileID: 1224506080}
+  question5: {fileID: 576976517}
+  bonus: {fileID: 917712871}
 --- !u!1 &314889951
 GameObject:
   m_ObjectHideFlags: 0
@@ -5616,7 +5635,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 915610196}
         m_TargetAssemblyTypeName: buttonnewgame, Assembly-CSharp
-        m_MethodName: NewGame
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6086,7 +6105,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 915610196}
         m_TargetAssemblyTypeName: buttonnewgame, Assembly-CSharp
-        m_MethodName: NewGame
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6936,6 +6955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winUI: {fileID: 874237380}
+  Id: level3
 --- !u!61 &1765626780
 BoxCollider2D:
   m_ObjectHideFlags: 0

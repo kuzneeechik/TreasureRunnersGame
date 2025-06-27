@@ -52,7 +52,7 @@ public class Lever : MonoBehaviour
 
         if (SaveLevel.Instance != null)
         {
-            SaveLevel.Instance.Levers.Add(Id);
+            SaveLevel.Instance.AddLever(Id);
         }
     }
 

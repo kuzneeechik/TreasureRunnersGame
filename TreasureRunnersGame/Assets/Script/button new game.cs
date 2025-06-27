@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
-using System.Collections;
 
 public class buttonnewgame : MonoBehaviour
 {
@@ -11,10 +9,19 @@ public class buttonnewgame : MonoBehaviour
     }
     public void NewGame()
     {
+        SaveLevel.Instance.ResetAll();
+
+        SceneManager.LoadScene("NewGame");
+    }
+    public void ContinueMenu()
+    {
+        SaveLevel.Instance.LoadFromDisk();
         SceneManager.LoadScene("NewGame");
     }
     public void Back()
     {
+        SaveLevel.Instance.SaveToDisk();
+
         SceneManager.LoadScene("Menu");
     }
     public void Book()

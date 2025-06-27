@@ -3118,7 +3118,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1041868873}
         m_TargetAssemblyTypeName: buttonnewgame, Assembly-CSharp
-        m_MethodName: NewGame
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -7,7 +7,7 @@ public class Artefact : MonoBehaviour
     private void Start()
     {
         if (SaveLevel.Instance !=  null &&
-            SaveLevel.Instance.Artifacts.Contains(Id))
+            SaveLevel.Instance.LocalArtifacts.Contains(Id))
         {
             Destroy(gameObject);
         }
@@ -18,7 +18,7 @@ public class Artefact : MonoBehaviour
         {
             if (SaveLevel.Instance != null)
             {
-                SaveLevel.Instance.Artifacts.Add(Id);
+                SaveLevel.Instance.AddArtifact(Id);
             }
 
             Destroy(gameObject);
