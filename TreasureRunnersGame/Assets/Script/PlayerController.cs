@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -28,7 +29,6 @@ public class PlayerController : MonoBehaviour
 
     private Camera MainCamera;
 
-    private float WallCheckDistance = 0.1f;
     private int LastDirection = 0;
     private bool BlockMoving = false;
 
@@ -61,9 +61,6 @@ public class PlayerController : MonoBehaviour
 
         float Move = 0f;
 
-        bool blockLeft = Physics2D.Raycast(transform.position, Vector2.left, WallCheckDistance, Ground);
-        bool blockRight = Physics2D.Raycast(transform.position, Vector2.right, WallCheckDistance, Ground);
-
         if (Input.GetKey(LeftKey))
         {
             Move = -1f;
@@ -74,11 +71,6 @@ public class PlayerController : MonoBehaviour
             }
 
             LastDirection = -1;
-
-            if (blockLeft)
-            {
-                BlockMoving = true;
-            }
         } 
         else if (Input.GetKey(RightKey))
         {
@@ -90,11 +82,6 @@ public class PlayerController : MonoBehaviour
             }
 
             LastDirection = 1;
-
-            if (blockRight)
-            {
-                BlockMoving = true;
-            }
         }
         else
         {
@@ -183,5 +170,36 @@ public class PlayerController : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.transform.name == "Tilemap")
+        {
+            foreach (ContactPoint2D contactPoint in collision.contacts)
+            {
+                Vector2 hitPoint = contactPoint.point;
+
+                if (Math.Abs(hitPoint.x - transform.position.x) > 0.27)
+                {
+                    if ((LastDirection == 1 && Input.GetKey(RightKey)) ||
+                        (LastDirection == -1 && Input.GetKey(LeftKey)))
+                    {
+                        BlockMoving = true;
+                    }
+                    else
+                    {
+                        BlockMoving = false;
+                    }
+
+                    return;
+                }
+            }
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        BlockMoving = false;
     }
 }

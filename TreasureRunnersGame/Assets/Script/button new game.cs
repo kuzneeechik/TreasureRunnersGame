@@ -53,6 +53,12 @@ public class buttonnewgame : MonoBehaviour
         SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("Level2");
     }
+    public void Level4()
+    {
+        Time.timeScale = 1f;
+        SaveLevel.Instance?.ResetLevel();
+        SceneManager.LoadScene("Level4");
+    }
     public void ReturnL3()
     {
         Time.timeScale = 1f;
