@@ -3298,7 +3298,7 @@ GameObject:
   - component: {fileID: 723677661}
   m_Layer: 0
   m_Name: platform2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3422,7 +3422,7 @@ GameObject:
   - component: {fileID: 724628376}
   m_Layer: 0
   m_Name: platform3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8073,7 +8073,7 @@ GameObject:
   - component: {fileID: 1957655367}
   m_Layer: 0
   m_Name: platform1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

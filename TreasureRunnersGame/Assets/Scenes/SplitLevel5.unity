@@ -860,7 +860,7 @@ GameObject:
   - component: {fileID: 524415407}
   m_Layer: 6
   m_Name: MovingPlatform2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2844,7 +2844,7 @@ GameObject:
   - component: {fileID: 1436485598}
   m_Layer: 0
   m_Name: platform1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5554,7 +5554,7 @@ GameObject:
   - component: {fileID: 2001891439}
   m_Layer: 0
   m_Name: platform2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
