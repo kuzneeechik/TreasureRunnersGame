@@ -33,6 +33,10 @@ public class buttonnewgame : MonoBehaviour
             SceneManager.LoadScene("Book");
         }
     }
+    public void Book2()
+    {
+        SceneManager.LoadScene("Book2");
+    }
     public void Setting(GameObject objPrefab)
     {
         Instantiate(objPrefab);
@@ -70,5 +74,11 @@ public class buttonnewgame : MonoBehaviour
         Time.timeScale = 1f;
         SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("Level5");
+    }
+    public void LevelBonus()
+    {
+        Time.timeScale = 1f;
+        SaveLevel.Instance?.ResetLevel();
+        SceneManager.LoadScene("BonusLevel");
     }
 }
