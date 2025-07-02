@@ -44,6 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SplitLevel5.unity
     guid: 6d221fe20c27a384a98c6f4a1f5c39cd
+  - enabled: 1
+    path: Assets/Scenes/Book2.unity
+    guid: 4c0308fb065d3cd4892bb681f9f42cf4
+  - enabled: 1
+    path: Assets/Scenes/BonusLevel.unity
+    guid: fd15422b1740e024facc42e965ced21c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
