@@ -12,7 +12,7 @@ public class Arrow : MonoBehaviour
         else if (other.CompareTag("Player1") ||
             other.CompareTag("Player2"))
         {
-            Destroy (gameObject);
+            Destroy(gameObject);
 
             PlayerController player = other.GetComponent<PlayerController>();
 

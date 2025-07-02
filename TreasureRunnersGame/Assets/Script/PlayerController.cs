@@ -174,7 +174,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.transform.name == "Tilemap")
+        if (collision.transform.name == "Tilemap" ||
+            collision.transform.tag == "Ground")
         {
             foreach (ContactPoint2D contactPoint in collision.contacts)
             {
