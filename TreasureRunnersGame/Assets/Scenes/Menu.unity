@@ -908,8 +908,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 170}
-  m_SizeDelta: {x: 550.5, y: 59.13}
+  m_AnchoredPosition: {x: 0, y: 178.2}
+  m_SizeDelta: {x: 588.35, y: 68.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847850420
 MonoBehaviour:
@@ -959,7 +959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Treasure Runner
+  m_Text: Treasure Runners
 --- !u!222 &847850422
 CanvasRenderer:
   m_ObjectHideFlags: 0

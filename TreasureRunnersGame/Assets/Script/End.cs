@@ -66,7 +66,7 @@ public class End : MonoBehaviour
     private void WinLevel()
     {
         winUI.SetActive(true);
-        Time.timeScale = 0;
+        
         SaveLevel.Instance.AddLevel(Id);
         SaveLevel.Instance.MoveArtifactsToGlobal();
     }

@@ -473,7 +473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.48235297, g: 0.13333334, b: 0, a: 0.392}
+  m_Color: {r: 0.48235297, g: 0.13333334, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -525,8 +525,8 @@ Transform:
   m_GameObject: {fileID: 64148733}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.355, y: 2.274, z: 2.486316}
-  m_LocalScale: {x: 0.7711846, y: 0.7711846, z: 0.7711846}
+  m_LocalPosition: {x: -1.355, y: 2.294569, z: 2.486316}
+  m_LocalScale: {x: 0.9457037, y: 0.9457037, z: 0.9457037}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 195248954}
@@ -4166,8 +4166,8 @@ Transform:
   m_GameObject: {fileID: 537307852}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.029, y: 2.267, z: 2.486316}
-  m_LocalScale: {x: 0.7711846, y: 0.7711846, z: 0.7711846}
+  m_LocalPosition: {x: -3.029, y: 2.294569, z: 2.486316}
+  m_LocalScale: {x: 0.97292656, y: 0.97292656, z: 0.97292656}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 195248954}
@@ -6313,6 +6313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 917712872}
   - component: {fileID: 917712873}
+  - component: {fileID: 917712874}
   m_Layer: 0
   m_Name: Ruby Staff
   m_TagString: Untagged
@@ -6330,7 +6331,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.13, y: 2.294569, z: 2.518298}
-  m_LocalScale: {x: 0.7708293, y: 0.7708293, z: 0.7708293}
+  m_LocalScale: {x: 0.8852975, y: 0.8852975, z: 0.8852975}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 195248954}
@@ -6390,6 +6391,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &917712874
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917712871}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ec40d210b092554193da67129779362, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &926470167
 GameObject:
   m_ObjectHideFlags: 0
@@ -6951,7 +6974,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.54, y: 2.294569, z: 2.5182889}
-  m_LocalScale: {x: 0.77082926, y: 0.77082926, z: 0.77082926}
+  m_LocalScale: {x: 0.939795, y: 0.939795, z: 0.939795}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 195248954}
@@ -9421,7 +9444,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.952046, y: 2.294569, z: 2.5182889}
-  m_LocalScale: {x: 0.77082926, y: 0.77082926, z: 0.77082926}
+  m_LocalScale: {x: 0.9452679, y: 0.9452679, z: 0.9452679}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 195248954}
@@ -10515,7 +10538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.53333336}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11843,7 +11866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13333334, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.1764706, g: 0.019607844, b: 0.019607844, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
