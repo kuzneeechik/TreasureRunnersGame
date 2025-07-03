@@ -1,23 +1,23 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Music : MonoBehaviour
+public class Sound : MonoBehaviour  
 {
-    [SerializeField] private GameObject object1;
-    [SerializeField] private GameObject object2; 
+    [SerializeField] private GameObject object1; 
+    [SerializeField] private GameObject object2;
     [SerializeField] private Button button;
 
     private void Start()
     {
-        UpdateObjectsState();
+        UpdateObjectsState(); 
         button.onClick.AddListener(ToggleObjects);
     }
 
     private void UpdateObjectsState()
     {
-        bool isMuted = Audio.Instance.IsMuted; 
-        object1.SetActive(!isMuted);
-        object2.SetActive(isMuted);
+        bool isEffectsMuted = Audio.Instance.IsEffectsMuted;
+        object1.SetActive(!isEffectsMuted);
+        object2.SetActive(isEffectsMuted);
     }
 
     private void ToggleObjects()
@@ -25,6 +25,6 @@ public class Music : MonoBehaviour
         bool newState = !object1.activeSelf;
         object1.SetActive(newState);
         object2.SetActive(!newState);
-        Audio.Instance.MuteMusic(!newState);
+        Audio.Instance.MuteEffects(!newState); 
     }
 }

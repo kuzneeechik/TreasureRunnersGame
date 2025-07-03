@@ -1717,7 +1717,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 502918492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50b01f42bb44b944fb85fd827904a48e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3598660d269e085498a0305b7894c366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   object1: {fileID: 1952264161}
@@ -3446,19 +3446,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1289399187}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1289399187
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 24645
+  controlID: 5861
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 24646
+  controlID: 5862
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 24594
+  controlID: 5808
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 24595
+  controlID: 5809
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -448,9 +448,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 9eb70000
       m_LastClickedID: 0
-      m_ExpandedIDs: 265effff165fffff6a61ffff0064ffff5c68ffffc87effff1683ffffda83ffff2888ffff1489ffff4a8dffffe48dffff3491ffff6c95ffff4ea1ffff4abbffffc0bcffff5ac4ffff7cc6ffffc4caffff5cd5ffffb6deffff2cdfffffa6e2ffffb8f6ffff52f7ffff0cfbffffdeba000036c100003ac2000046c800006cc90000c0d100003ad20000e6d2000044d90000c8e00000dae00000f8f000002cf2000042f3000076f400008cf70000
+      m_ExpandedIDs: 78a8ffff12a9fffff2a9ffff1eb4ffff5ab5ffffe4d2ffff56d8ffff74e1ffff42e4ffff6afaffffcccb000000cd000008d500003cd600002c0101004601010060020100880c0100a20c0100bc0d0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1829,7 +1829,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1839,16 +1839,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: 46
   m_LastProjectPath: C:\TreasureRunnersGame\TreasureRunnersGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: cab70000
-    m_LastClickedID: 47050
-    m_ExpandedIDs: 00000000cab70000ccb70000ceb70000d0b70000d2b70000d4b70000d6b70000d8b7000000ca9a3b
+    scrollPos: {x: 0, y: 86}
+    m_SelectedIDs: 9eb70000
+    m_LastClickedID: 47006
+    m_ExpandedIDs: 0000000078b500007ab500007cb500007eb5000080b5000082b5000084b5000086b5000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1877,7 +1877,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cab70000ccb70000ceb70000d0b70000d2b70000d4b70000d6b70000d8b7000000ca9a3b
+    m_ExpandedIDs: 0000000078b500007ab500007cb500007eb5000080b5000082b5000084b5000086b5000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

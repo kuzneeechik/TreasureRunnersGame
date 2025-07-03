@@ -69,4 +69,6 @@ public class Audio : MonoBehaviour
     {
         EffectsPlayer.mute = isMute;
     }
+    public bool IsMuted => BackgroundPlayer.mute;
+    public bool IsEffectsMuted => EffectsPlayer.mute;
 }
