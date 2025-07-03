@@ -78,12 +78,16 @@ public class SaveLevel : MonoBehaviour
     {
         Player1Position = player1;
         Player2Position = player2;
+
         IsSave = true;
     }
 
     public void RestorePlayerPositions(Transform player1, Transform player2)
     {
-        if (!IsSave) return;
+        if (!IsSave)
+        {
+            return;
+        }
 
         player1.position = Player1Position;
         player2.position = Player2Position;

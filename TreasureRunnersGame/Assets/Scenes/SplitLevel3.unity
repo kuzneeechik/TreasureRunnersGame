@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 640566786}
+  GameOverCanvas: {fileID: 640566786}
   Speed: 4
   JumpForse: 6
   LeftKey: left
@@ -318,7 +318,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  Animator: {fileID: 0}
+  Animator: {fileID: 55057173}
   IsAlive: 1
 --- !u!50 &55057175
 Rigidbody2D:
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f18d3d34e782464eba0d6d34f9b096e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
+  Animator: {fileID: 486224029}
 --- !u!114 &486224031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1619,7 +1619,7 @@ MonoBehaviour:
   Portal: {fileID: 486224030}
   Distance: 1
   Speed: 1
-  nextScene: Level3
+  NextScene: Level3
   ChangeScene: {fileID: 2003564331}
 --- !u!1 &559247361
 GameObject:
@@ -2344,7 +2344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f18d3d34e782464eba0d6d34f9b096e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
+  Animator: {fileID: 825066722}
 --- !u!114 &825066724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2361,7 +2361,7 @@ MonoBehaviour:
   Portal: {fileID: 825066723}
   Distance: 1
   Speed: 1
-  nextScene: Level3
+  NextScene: Level3
   ChangeScene: {fileID: 2003564331}
 --- !u!1 &1113542026
 GameObject:
@@ -2396,7 +2396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 142003548}
-  Id: 
+  Id: SplitLever_3.1
 --- !u!61 &1113542028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2839,7 +2839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 640566786}
+  GameOverCanvas: {fileID: 640566786}
   Speed: 4
   JumpForse: 6
   LeftKey: a
@@ -2850,7 +2850,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  Animator: {fileID: 0}
+  Animator: {fileID: 1402918200}
   IsAlive: 1
 --- !u!50 &1402918202
 Rigidbody2D:
@@ -5046,8 +5046,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b772b98a1b96746bf6741bb69d7414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1741492124}
-  Id: 
+  Door: {fileID: 1741492124}
+  Id: SplitLever_3.2
 --- !u!1 &1702293426
 GameObject:
   m_ObjectHideFlags: 0

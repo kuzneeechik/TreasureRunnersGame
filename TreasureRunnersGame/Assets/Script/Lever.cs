@@ -11,7 +11,7 @@ public class Lever : MonoBehaviour
 
     public string Id;
 
-    public bool IsPlayDoor = false;
+    private bool IsPlayDoor = false;
 
     private void Start()
     {
@@ -31,7 +31,10 @@ public class Lever : MonoBehaviour
 
     private void Update()
     {
-        if (IsTapped || PlayerInRange == null) return;
+        if (IsTapped || PlayerInRange == null)
+        {
+            return;
+        }
 
         string tag = PlayerInRange.tag;
 

@@ -2,19 +2,19 @@ using UnityEngine;
 
 public class LevelBonus : MonoBehaviour
 {
-    public GameObject bonus1;
-    public GameObject bonus2;
-    public GameObject bonus3;
-    public GameObject bonus4;
-    public GameObject bonus5;
-    public GameObject level;
+    public GameObject Bonus1;
+    public GameObject Bonus2;
+    public GameObject Bonus3;
+    public GameObject Bonus4;
+    public GameObject Bonus5;
+    public GameObject Level;
 
     void Update()
     {
-        if (bonus1.activeSelf && bonus2.activeSelf &&
-            bonus3.activeSelf && bonus4.activeSelf && bonus5.activeSelf)
+        if (Bonus1.activeSelf && Bonus2.activeSelf &&
+            Bonus3.activeSelf && Bonus4.activeSelf && Bonus5.activeSelf)
         {
-            level.SetActive(true);
+            Level.SetActive(true);
         }
     }
 }

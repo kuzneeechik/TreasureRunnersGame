@@ -943,7 +943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 0}
+  GameOverCanvas: {fileID: 0}
   Speed: 4
   JumpForse: 6.5
   LeftKey: left
@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 0}
+  GameOverCanvas: {fileID: 0}
   Speed: 4
   JumpForse: 6.5
   LeftKey: a
@@ -2543,7 +2543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0339d691416da6448a27c70009d03154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winUI: {fileID: 585094145}
+  WinUI: {fileID: 585094145}
   Id: levelbonus
 --- !u!61 &1267544432
 BoxCollider2D:

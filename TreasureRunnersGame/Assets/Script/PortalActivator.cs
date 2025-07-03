@@ -10,7 +10,7 @@ public class PortalActivator : MonoBehaviour
     public Portal CurrentPortal;
     public float Distance;
     public float Speed;
-    public string nextScene;
+    public string NextScene;
 
     private bool IsActive = false;
     private bool Player1Pulled = false;
@@ -84,6 +84,7 @@ public class PortalActivator : MonoBehaviour
             {
                 PullingIntoPortal(Player1, ref Player1Pulled);
             }
+
             if (!Player2Pulled && Vector2.Distance(transform.position, Player2.position) < Distance)
             {
                 PullingIntoPortal(Player2, ref Player2Pulled);
@@ -124,17 +125,18 @@ public class PortalActivator : MonoBehaviour
     {
         if (ChangeScene != null)
         {
-            ChangeScene.SwapScene(nextScene);
+            ChangeScene.SwapScene(NextScene);
         }
         else
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(NextScene);
         }
     }
 
     private IEnumerator PlayerActivation()
     {
         yield return null;
+
         Player1.gameObject.SetActive(true);
         Player2.gameObject.SetActive(true);
     }

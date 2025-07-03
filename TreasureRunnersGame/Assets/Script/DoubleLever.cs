@@ -2,23 +2,28 @@ using UnityEngine;
 
 public class DoubleLever : MonoBehaviour
 {
-    private int tapCount = 0;
-    private GameObject playerInRange = null;
-    private Animator animator;
-    public Door door;
+    private int TapCount = 0;
+
+    private GameObject PlayerInRange = null;
+    private Animator Animator;
+
+    public Door Door;
 
     public string Id;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        Animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (tapCount >= 2 || playerInRange == null) return;
+        if (TapCount >= 2 || PlayerInRange == null)
+        {
+            return;
+        }
 
-        string tag = playerInRange.tag;
+        string tag = PlayerInRange.tag;
 
         if ((tag == "Player1" && Input.GetKeyDown(KeyCode.RightShift)) ||
             (tag == "Player2" && Input.GetKeyDown(KeyCode.LeftShift)))
@@ -29,17 +34,17 @@ public class DoubleLever : MonoBehaviour
 
     private void UseLever()
     {
-        tapCount++;
+        TapCount++;
 
-        if (tapCount == 1)
+        if (TapCount == 1)
         {
-            animator.SetBool("isTapped", true);
-            door.Animator.SetBool("isOpen", true);
+            Animator.SetBool("isTapped", true);
+            Door.Animator.SetBool("isOpen", true);
         }
-        else if (tapCount == 2)
+        else if (TapCount == 2)
         {
-            animator.SetBool("isTapped", false);
-            door.Animator.SetBool("isOpen", false);
+            Animator.SetBool("isTapped", false);
+            Door.Animator.SetBool("isOpen", false);
         }
     }
 
@@ -47,15 +52,15 @@ public class DoubleLever : MonoBehaviour
     {
         if (other.CompareTag("Player1") || other.CompareTag("Player2"))
         {
-            playerInRange = other.gameObject;
+            PlayerInRange = other.gameObject;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (playerInRange == other.gameObject)
+        if (PlayerInRange == other.gameObject)
         {
-            playerInRange = null;
+            PlayerInRange = null;
         }
     }
 }

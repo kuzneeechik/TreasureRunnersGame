@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 1457486773}
+  GameOverCanvas: {fileID: 1457486773}
   Speed: 4
   JumpForse: 6.5
   LeftKey: left
@@ -517,7 +517,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  Animator: {fileID: 0}
+  Animator: {fileID: 178712933}
   IsAlive: 1
 --- !u!95 &178712933
 Animator:
@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 1457486773}
+  GameOverCanvas: {fileID: 1457486773}
   Speed: 4
   JumpForse: 6.5
   LeftKey: a
@@ -720,7 +720,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  Animator: {fileID: 0}
+  Animator: {fileID: 181106067}
   IsAlive: 1
 --- !u!95 &181106067
 Animator:
@@ -946,12 +946,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: {fileID: 571188378}
-  question2: {fileID: 654282610}
-  question3: {fileID: 806731806}
-  question4: {fileID: 1224506080}
-  question5: {fileID: 576976517}
-  bonus: {fileID: 917712871}
+  Question1: {fileID: 571188378}
+  Question2: {fileID: 654282610}
+  Question3: {fileID: 806731806}
+  Question4: {fileID: 1224506080}
+  Question5: {fileID: 576976517}
+  BonusArtefact: {fileID: 917712871}
 --- !u!1 &314889951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,7 +2414,7 @@ MonoBehaviour:
   CurrentPortal: {fileID: 1154516787}
   Distance: 1
   Speed: 1
-  nextScene: SplitLevel2
+  NextScene: SplitLevel2
   ChangeScene: {fileID: 823707172}
 --- !u!4 &480463602
 Transform:
@@ -4904,7 +4904,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door: {fileID: 724628377}
   Id: Lever_2.2
-  IsPlayDoor: 0
 --- !u!95 &1130552738
 Animator:
   serializedVersion: 7
@@ -4941,7 +4940,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door: {fileID: 723677662}
   Id: Lever_2.2
-  IsPlayDoor: 0
 --- !u!61 &1130552740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6896,7 +6894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0339d691416da6448a27c70009d03154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winUI: {fileID: 874237380}
+  WinUI: {fileID: 874237380}
   Id: level3
 --- !u!61 &1765626780
 BoxCollider2D:
@@ -7950,7 +7948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec9fab4dd2567e498adba6b75adade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
+  Animator: {fileID: 1957655367}
 --- !u!95 &1957655367
 Animator:
   serializedVersion: 7
@@ -8210,7 +8208,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door: {fileID: 1957655366}
   Id: Lever_2.1
-  IsPlayDoor: 0
 --- !u!95 &1990074408
 Animator:
   serializedVersion: 7

@@ -1,53 +1,59 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class End : MonoBehaviour
 {
-    public GameObject winUI;
+    public GameObject WinUI;
     public string Id;
 
-    private bool player1Inside = false;
-    private bool player2Inside = false;
+    private bool Player1Inside = false;
+    private bool Player2Inside = false;
 
-    private GameObject player1;
-    private GameObject player2;
+    private GameObject Player1;
+    private GameObject Player2;
 
-    private Collider2D doorCollider;
+    private Collider2D DoorCollider;
 
-    private bool isEndPlay = false;
+    private bool IsEndPlay = false;
 
     private void Start()
     {
-        doorCollider = GetComponent<Collider2D>();
+        DoorCollider = GetComponent<Collider2D>();
 
-        player1 = GameObject.FindGameObjectWithTag("Player1");
-        player2 = GameObject.FindGameObjectWithTag("Player2");
+        Player1 = GameObject.FindGameObjectWithTag("Player1");
+        Player2 = GameObject.FindGameObjectWithTag("Player2");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player1"))
-            player1Inside = true;
+        {
+            Player1Inside = true;
+        }
 
         if (other.CompareTag("Player2"))
-            player2Inside = true;
+        {
+            Player2Inside = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player1"))
-            player1Inside = false;
+        {
+            Player1Inside = false;
+        }
 
         if (other.CompareTag("Player2"))
-            player2Inside = false;
+        {
+            Player2Inside = false;
+        }
     }
 
     private void Update()
     {
-        if (player1Inside && player2Inside && player1 != null && player2 != null)
+        if (Player1Inside && Player2Inside && Player1 != null && Player2 != null)
         {
-            if (IsFullyInside2D(player1) && IsFullyInside2D(player2))
+            if (IsFullyInside2D(Player1) && IsFullyInside2D(Player2))
             {
                 WinLevel();
             }
@@ -57,9 +63,13 @@ public class End : MonoBehaviour
     private bool IsFullyInside2D(GameObject player)
     {
         Collider2D playerCollider = player.GetComponent<Collider2D>();
-        if (playerCollider == null) return false;
 
-        Bounds doorBounds = doorCollider.bounds;
+        if (playerCollider == null)
+        {
+            return false;
+        }
+
+        Bounds doorBounds = DoorCollider.bounds;
         Bounds playerBounds = playerCollider.bounds;
 
         return doorBounds.Contains(playerBounds.min) && doorBounds.Contains(playerBounds.max);
@@ -67,13 +77,13 @@ public class End : MonoBehaviour
 
     private void WinLevel()
     {
-        winUI.SetActive(true);
+        WinUI.SetActive(true);
 
-        if (!isEndPlay)
+        if (!IsEndPlay)
         {
             Audio.Instance.PlayEnd();
 
-            isEndPlay = true;
+            IsEndPlay = true;
         }
         
         SaveLevel.Instance.AddLevel(Id);

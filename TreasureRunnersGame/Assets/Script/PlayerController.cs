@@ -1,10 +1,9 @@
 using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject gameOverCanvas;
+    public GameObject GameOverCanvas;
     public float Speed;
     public float JumpForse;
     private float Move;
@@ -119,9 +118,10 @@ public class PlayerController : MonoBehaviour
 
     private void ShowGameOverCanvas()
     {
-        if (gameOverCanvas != null)
+        if (GameOverCanvas != null)
         {
-            gameOverCanvas.SetActive(true);
+            GameOverCanvas.SetActive(true);
+
             Time.timeScale = 0f;
         }
     }

@@ -2,21 +2,21 @@ using UnityEngine;
 
 public class Description : MonoBehaviour
 {
-    [SerializeField] private GameObject targetObject; 
+    [SerializeField] private GameObject TargetObject; 
 
     private void OnMouseEnter()
     {
-        if (targetObject != null)
+        if (TargetObject != null)
         {
-            targetObject.SetActive(true); 
+            TargetObject.SetActive(true); 
         }
     }
 
     private void OnMouseExit()
     {
-        if (targetObject != null)
+        if (TargetObject != null)
         {
-            targetObject.SetActive(false);
+            TargetObject.SetActive(false);
         }
     }
 }

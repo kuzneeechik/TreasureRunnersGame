@@ -6,7 +6,7 @@ public class SplitPortal : MonoBehaviour
     public Portal Portal;
     public float Distance;
     public float Speed;
-    public string nextScene;
+    public string NextScene;
 
     private bool IsPulled = false;
     private bool LoadScene = false;
@@ -15,7 +15,10 @@ public class SplitPortal : MonoBehaviour
 
     private void Update()
     {
-        if (IsPulled || Player == null) return;
+        if (IsPulled || Player == null)
+        {
+            return;
+        }
 
         if (Vector2.Distance(transform.position, Player.position) < Distance)
         {
@@ -61,11 +64,11 @@ public class SplitPortal : MonoBehaviour
     {
         if (ChangeScene != null)
         {
-            ChangeScene.SwapScene(nextScene);
+            ChangeScene.SwapScene(NextScene);
         }
         else
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(NextScene);
         }
     }
 }

@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 2001891437}
-  Id: 
+  Id: SplitLever_5.2
 --- !u!61 &627398574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f18d3d34e782464eba0d6d34f9b096e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
+  Animator: {fileID: 766984061}
 --- !u!114 &766984065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,7 +1536,7 @@ MonoBehaviour:
   Portal: {fileID: 766984064}
   Distance: 1
   Speed: 1
-  nextScene: Level5
+  NextScene: Level5
   ChangeScene: {fileID: 1549413714}
 --- !u!1 &780193936
 GameObject:
@@ -1890,7 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f18d3d34e782464eba0d6d34f9b096e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
+  Animator: {fileID: 1062939274}
 --- !u!114 &1062939278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   Portal: {fileID: 1062939277}
   Distance: 1
   Speed: 1
-  nextScene: Level5
+  NextScene: Level5
   ChangeScene: {fileID: 1549413714}
 --- !u!1 &1188515958
 GameObject:
@@ -2113,7 +2113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 1436485597}
-  Id: 
+  Id: SplitLever_5.1
 --- !u!95 &1190635351
 Animator:
   serializedVersion: 7
@@ -2683,7 +2683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 542405862}
+  GameOverCanvas: {fileID: 542405862}
   Speed: 4
   JumpForse: 7
   LeftKey: a
@@ -3155,7 +3155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 542405862}
+  GameOverCanvas: {fileID: 542405862}
   Speed: 4
   JumpForse: 7.5
   LeftKey: left

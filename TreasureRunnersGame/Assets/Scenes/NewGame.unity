@@ -701,9 +701,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b01f42bb44b944fb85fd827904a48e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  object1: {fileID: 1222685887}
-  object2: {fileID: 1432333266}
-  button: {fileID: 1289399186}
+  Object1: {fileID: 1222685887}
+  Object2: {fileID: 1432333266}
+  Button: {fileID: 1289399186}
 --- !u!1 &120492677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,9 +1720,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3598660d269e085498a0305b7894c366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  object1: {fileID: 1952264161}
-  object2: {fileID: 213612687}
-  button: {fileID: 49796101}
+  Object1: {fileID: 1952264161}
+  Object2: {fileID: 213612687}
+  Button: {fileID: 49796101}
 --- !u!1 &507390753
 GameObject:
   m_ObjectHideFlags: 0

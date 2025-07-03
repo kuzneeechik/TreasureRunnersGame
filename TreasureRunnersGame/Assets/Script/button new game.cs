@@ -7,62 +7,76 @@ public class buttonnewgame : MonoBehaviour
     {
         return SceneManager.GetActiveScene().name == "Book";
     }
+
     public void NewGame()
     {
         SaveLevel.Instance.ResetAll();
 
         SceneManager.LoadScene("NewGame");
     }
+
     public void ContinueMenu()
     {
         SaveLevel.Instance.LoadFromDisk();
+
         SceneManager.LoadScene("NewGame");
     }
+
     public void Back()
     {
         SaveLevel.Instance.SaveToDisk();
 
         SceneManager.LoadScene("Menu");
     }
+
     public void Book()
     {
         if (IsBookSceneActive())
+        {
             SceneManager.LoadScene("NewGame");
+        }
         else
         {
             SceneManager.LoadScene("Book");
         }
     }
+
     public void Book2()
     {
         SceneManager.LoadScene("Book2");
     }
+
     public void Setting(GameObject objPrefab)
     {
         Instantiate(objPrefab);
     }
+
     public void Continue()
     {
         SceneManager.LoadScene("NewGame");
     }
+
     public void Level1()
     {
         Time.timeScale = 1f;
         SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("Level1");
     }
+
     public void Level2()
     {
         Time.timeScale = 1f;
         SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("Level2");
     }
+
     public void Level4()
     {
         Time.timeScale = 1f;
         SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("Level4");
     }
+
     public void ReturnL3()
     {
         Time.timeScale = 1f;
@@ -75,12 +89,14 @@ public class buttonnewgame : MonoBehaviour
         SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("Level5");
     }
+
     public void LevelBonus()
     {
         Time.timeScale = 1f;
         SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("BonusLevel");
     }
+
     public void GoOut()
     {
         SaveLevel.Instance?.SaveToDisk();

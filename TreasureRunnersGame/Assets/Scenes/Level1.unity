@@ -509,12 +509,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: {fileID: 1943396303}
-  question2: {fileID: 1732125851}
-  question3: {fileID: 27074609}
-  question4: {fileID: 865353026}
-  question5: {fileID: 1243074531}
-  bonus: {fileID: 1176598363}
+  Question1: {fileID: 1943396303}
+  Question2: {fileID: 1732125851}
+  Question3: {fileID: 27074609}
+  Question4: {fileID: 865353026}
+  Question5: {fileID: 1243074531}
+  BonusArtefact: {fileID: 1176598363}
 --- !u!1 &97154234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,7 +2101,7 @@ MonoBehaviour:
   CurrentPortal: {fileID: 1508790114}
   Distance: 1
   Speed: 1
-  nextScene: SplitLevel1
+  NextScene: SplitLevel1
   ChangeScene: {fileID: 892741133}
 --- !u!4 &619720332
 Transform:
@@ -4544,7 +4544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 97154234}
+  GameOverCanvas: {fileID: 97154234}
   Speed: 4
   JumpForse: 5
   LeftKey: a
@@ -4555,7 +4555,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  Animator: {fileID: 0}
+  Animator: {fileID: 1426128282}
   IsAlive: 1
 --- !u!95 &1426128282
 Animator:
@@ -5530,7 +5530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 97154234}
+  GameOverCanvas: {fileID: 97154234}
   Speed: 4
   JumpForse: 5
   LeftKey: left
@@ -5541,7 +5541,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  Animator: {fileID: 0}
+  Animator: {fileID: 1832313733}
   IsAlive: 1
 --- !u!95 &1832313733
 Animator:
@@ -7993,7 +7993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0339d691416da6448a27c70009d03154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winUI: {fileID: 1466851508}
+  WinUI: {fileID: 1466851508}
   Id: level2
 --- !u!1 &2139498918
 GameObject:

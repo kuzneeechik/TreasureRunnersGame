@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 462091545}
+  TargetObject: {fileID: 462091545}
 --- !u!61 &472594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1576463841}
+  TargetObject: {fileID: 1576463841}
 --- !u!61 &2522575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 98088233}
+  TargetObject: {fileID: 98088233}
 --- !u!1 &98088233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,7 +1321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1507926236}
+  TargetObject: {fileID: 1507926236}
 --- !u!61 &112932885
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1658,7 +1658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1093531348}
+  TargetObject: {fileID: 1093531348}
 --- !u!61 &163062749
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1821,7 +1821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1663014901}
+  TargetObject: {fileID: 1663014901}
 --- !u!61 &166308881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2071,7 +2071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1303008788}
+  TargetObject: {fileID: 1303008788}
 --- !u!61 &258810380
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2234,7 +2234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 2022861271}
+  TargetObject: {fileID: 2022861271}
 --- !u!61 &282919721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2658,7 +2658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 2131696004}
+  TargetObject: {fileID: 2131696004}
 --- !u!61 &373578935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2821,7 +2821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 479701159}
+  TargetObject: {fileID: 479701159}
 --- !u!61 &382481158
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3419,7 +3419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1478473721}
+  TargetObject: {fileID: 1478473721}
 --- !u!61 &559581293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3625,12 +3625,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: {fileID: 74276150}
-  question2: {fileID: 1278224162}
-  question3: {fileID: 1337775478}
-  question4: {fileID: 1257947549}
-  question5: {fileID: 1133654481}
-  bonus: {fileID: 1972039344}
+  Question1: {fileID: 74276150}
+  Question2: {fileID: 1278224162}
+  Question3: {fileID: 1337775478}
+  Question4: {fileID: 1257947549}
+  Question5: {fileID: 1133654481}
+  BonusArtefact: {fileID: 1972039344}
 --- !u!1 &603124838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4131,12 +4131,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947475755e93f2649b284b225dfb799b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonus1: {fileID: 75339976}
-  bonus2: {fileID: 1972039344}
-  bonus3: {fileID: 1600330082}
-  bonus4: {fileID: 1563756049}
-  bonus5: {fileID: 1503760746}
-  level: {fileID: 2133126629}
+  Bonus1: {fileID: 75339976}
+  Bonus2: {fileID: 1972039344}
+  Bonus3: {fileID: 1600330082}
+  Bonus4: {fileID: 1563756049}
+  Bonus5: {fileID: 1503760746}
+  Level: {fileID: 2133126629}
 --- !u!1 &623026764
 GameObject:
   m_ObjectHideFlags: 0
@@ -4253,7 +4253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 574604224}
+  TargetObject: {fileID: 574604224}
 --- !u!61 &623026769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4460,7 +4460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 383290139}
+  TargetObject: {fileID: 383290139}
 --- !u!61 &678597520
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5678,12 +5678,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: {fileID: 417763743}
-  question2: {fileID: 930822922}
-  question3: {fileID: 940227666}
-  question4: {fileID: 876944784}
-  question5: {fileID: 13041072}
-  bonus: {fileID: 1600330082}
+  Question1: {fileID: 417763743}
+  Question2: {fileID: 930822922}
+  Question3: {fileID: 940227666}
+  Question4: {fileID: 876944784}
+  Question5: {fileID: 13041072}
+  BonusArtefact: {fileID: 1600330082}
 --- !u!1 &1133654481
 GameObject:
   m_ObjectHideFlags: 0
@@ -6053,7 +6053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1756332071}
+  TargetObject: {fileID: 1756332071}
 --- !u!61 &1198852432
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6172,12 +6172,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: {fileID: 727561252}
-  question2: {fileID: 127645473}
-  question3: {fileID: 1775657594}
-  question4: {fileID: 72595086}
-  question5: {fileID: 870436490}
-  bonus: {fileID: 75339976}
+  Question1: {fileID: 727561252}
+  Question2: {fileID: 127645473}
+  Question3: {fileID: 1775657594}
+  Question4: {fileID: 72595086}
+  Question5: {fileID: 870436490}
+  BonusArtefact: {fileID: 75339976}
 --- !u!1 &1257947549
 GameObject:
   m_ObjectHideFlags: 0
@@ -6658,12 +6658,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: {fileID: 1386049891}
-  question2: {fileID: 1790481343}
-  question3: {fileID: 303198748}
-  question4: {fileID: 325859897}
-  question5: {fileID: 51621582}
-  bonus: {fileID: 1503760746}
+  Question1: {fileID: 1386049891}
+  Question2: {fileID: 1790481343}
+  Question3: {fileID: 303198748}
+  Question4: {fileID: 325859897}
+  Question5: {fileID: 51621582}
+  BonusArtefact: {fileID: 1503760746}
 --- !u!1 &1325317779
 GameObject:
   m_ObjectHideFlags: 0
@@ -7245,7 +7245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 686964375}
+  TargetObject: {fileID: 686964375}
 --- !u!61 &1435979134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7626,7 +7626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1402160124}
+  TargetObject: {fileID: 1402160124}
 --- !u!1 &1475274824
 GameObject:
   m_ObjectHideFlags: 0
@@ -7996,7 +7996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1144839423}
+  TargetObject: {fileID: 1144839423}
 --- !u!61 &1503760751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8202,12 +8202,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cd0ec3192e6fa47a8dbcf0e623450c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: {fileID: 71737328}
-  question2: {fileID: 973706903}
-  question3: {fileID: 214934383}
-  question4: {fileID: 2061433557}
-  question5: {fileID: 705927103}
-  bonus: {fileID: 1563756049}
+  Question1: {fileID: 71737328}
+  Question2: {fileID: 973706903}
+  Question3: {fileID: 214934383}
+  Question4: {fileID: 2061433557}
+  Question5: {fileID: 705927103}
+  BonusArtefact: {fileID: 1563756049}
 --- !u!1 &1527608281
 GameObject:
   m_ObjectHideFlags: 0
@@ -8436,7 +8436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 603124838}
+  TargetObject: {fileID: 603124838}
 --- !u!61 &1563756053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8686,7 +8686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1488466538}
+  TargetObject: {fileID: 1488466538}
 --- !u!61 &1600330087
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8936,7 +8936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 458445168}
+  TargetObject: {fileID: 458445168}
 --- !u!61 &1712072245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9625,7 +9625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1716611600}
+  TargetObject: {fileID: 1716611600}
 --- !u!1 &1897935696
 GameObject:
   m_ObjectHideFlags: 0
@@ -9875,7 +9875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1539007162}
+  TargetObject: {fileID: 1539007162}
 --- !u!1 &1942152193
 GameObject:
   m_ObjectHideFlags: 0
@@ -10146,7 +10146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 145267686}
+  TargetObject: {fileID: 145267686}
 --- !u!61 &1972039349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10396,7 +10396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1897935696}
+  TargetObject: {fileID: 1897935696}
 --- !u!61 &2060395087
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10646,7 +10646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969c6239d8873fd499240daa3c2e69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 613695871}
+  TargetObject: {fileID: 613695871}
 --- !u!61 &2074880306
 BoxCollider2D:
   m_ObjectHideFlags: 0

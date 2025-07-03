@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 1126890291}
+  GameOverCanvas: {fileID: 1126890291}
   Speed: 4
   JumpForse: 7.5
   LeftKey: left
@@ -212,7 +212,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  Animator: {fileID: 0}
+  Animator: {fileID: 124872373}
   IsAlive: 1
 --- !u!95 &124872373
 Animator:
@@ -544,8 +544,8 @@ MonoBehaviour:
   Portal: {fileID: 208639537}
   Distance: 1
   Speed: 1
-  nextScene: Level4
-  ChangeScene: {fileID: 0}
+  NextScene: Level4
+  ChangeScene: {fileID: 2028568370}
 --- !u!212 &208639539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b420001aee30541871211d7e7fbe0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 1126890291}
+  GameOverCanvas: {fileID: 1126890291}
   Speed: 4
   JumpForse: 7.5
   LeftKey: a
@@ -1170,7 +1170,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 64
-  Animator: {fileID: 0}
+  Animator: {fileID: 318257116}
   IsAlive: 1
 --- !u!95 &318257116
 Animator:
@@ -2845,8 +2845,8 @@ MonoBehaviour:
   Portal: {fileID: 1012153136}
   Distance: 1
   Speed: 1
-  nextScene: Level4
-  ChangeScene: {fileID: 0}
+  NextScene: Level4
+  ChangeScene: {fileID: 2028568370}
 --- !u!212 &1012153138
 SpriteRenderer:
   m_ObjectHideFlags: 0

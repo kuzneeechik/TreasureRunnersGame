@@ -4,12 +4,19 @@ public class ArtefactParentManager : MonoBehaviour
 {
     private void Start()
     {
-        if (SaveLevel.Instance == null) return;
+        if (SaveLevel.Instance == null)
+        {
+            return;
+        }
 
         foreach (Transform child in transform)
         {
             Artefact_ID artefact = child.GetComponent<Artefact_ID>();
-            if (artefact == null) continue;
+
+            if (artefact == null)
+            {
+                continue;
+            }
 
             bool shouldBeActive = SaveLevel.Instance.ArtifactsBook.Contains(artefact.Id);
 

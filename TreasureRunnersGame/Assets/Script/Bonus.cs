@@ -2,20 +2,20 @@ using UnityEngine;
 
 public class Bonus : MonoBehaviour
 {
-    public GameObject question1;
-    public GameObject question2;
-    public GameObject question3;
-    public GameObject question4;
-    public GameObject question5;
-    public GameObject bonus;
+    public GameObject Question1;
+    public GameObject Question2;
+    public GameObject Question3;
+    public GameObject Question4;
+    public GameObject Question5;
+    public GameObject BonusArtefact;
 
     void Update()
     {
-        if (!question1.activeSelf && !question2.activeSelf &&
-            !question3.activeSelf && !question4.activeSelf)
+        if (!Question1.activeSelf && !Question2.activeSelf &&
+            !Question3.activeSelf && !Question4.activeSelf)
         {
-            question5.SetActive(false);
-            bonus.SetActive(true);
+            Question5.SetActive(false);
+            BonusArtefact.SetActive(true);
         }
     }
 }
