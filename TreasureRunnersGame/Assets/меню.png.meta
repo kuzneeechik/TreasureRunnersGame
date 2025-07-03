@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 2158ffbdfccdda8489acd943ffbb6114
+guid: ea3c7a739cf3c4f478e693451b3e5959
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6217000888047231815
-    second: vecteezy_volume-sound-icon-black_22691813_0
-  - first:
-      213: 1750262823395131307
-    second: vecteezy_volume-sound-icon-black_22691813_1
-  - first:
-      213: 7906379438412981808
-    second: vecteezy_volume-sound-icon-black_22691813_2
-  - first:
-      213: -2816959575062358884
-    second: vecteezy_volume-sound-icon-black_22691813_3
+      213: 2830964080993680869
+    second: "\u043C\u0435\u043D\u044E_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vecteezy_volume-sound-icon-black_22691813_0
+      name: "\u043C\u0435\u043D\u044E_0"
       rect:
         serializedVersion: 2
-        x: 427
-        y: 1286
-        width: 730
-        height: 1428
+        x: 0
+        y: 0
+        width: 406
+        height: 412
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9bc18a3a1a6c8b9a0800000000000000
-      internalID: -6217000888047231815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vecteezy_volume-sound-icon-black_22691813_1
-      rect:
-        serializedVersion: 2
-        x: 1305
-        y: 573
-        width: 1264
-        height: 2854
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: baff90cb3ce2a4810800000000000000
-      internalID: 1750262823395131307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vecteezy_volume-sound-icon-black_22691813_2
-      rect:
-        serializedVersion: 2
-        x: 2732
-        y: 1215
-        width: 460
-        height: 1570
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 036ee0e953a19bd60800000000000000
-      internalID: 7906379438412981808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vecteezy_volume-sound-icon-black_22691813_3
-      rect:
-        serializedVersion: 2
-        x: 3002
-        y: 945
-        width: 571
-        height: 2110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c94d5cdf03628e8d0800000000000000
-      internalID: -2816959575062358884
+      spriteID: 5edb48325da994720800000000000000
+      internalID: 2830964080993680869
       vertices: []
       indices: 
       edges: []
@@ -200,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      vecteezy_volume-sound-icon-black_22691813_0: -6217000888047231815
-      vecteezy_volume-sound-icon-black_22691813_1: 1750262823395131307
-      vecteezy_volume-sound-icon-black_22691813_2: 7906379438412981808
-      vecteezy_volume-sound-icon-black_22691813_3: -2816959575062358884
+      "\u043C\u0435\u043D\u044E_0": 2830964080993680869
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

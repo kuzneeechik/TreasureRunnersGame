@@ -81,4 +81,14 @@ public class buttonnewgame : MonoBehaviour
         SaveLevel.Instance?.ResetLevel();
         SceneManager.LoadScene("BonusLevel");
     }
+    public void GoOut()
+    {
+        SaveLevel.Instance?.SaveToDisk();
+
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
 }
