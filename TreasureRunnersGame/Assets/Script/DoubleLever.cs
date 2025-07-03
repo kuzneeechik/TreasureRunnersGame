@@ -11,6 +11,8 @@ public class DoubleLever : MonoBehaviour
 
     public string Id;
 
+    private bool IsPlayDoor = false; 
+
     private void Start()
     {
         Animator = GetComponent<Animator>();
@@ -39,11 +41,25 @@ public class DoubleLever : MonoBehaviour
         if (TapCount == 1)
         {
             Animator.SetBool("isTapped", true);
+
+            if (!IsPlayDoor)
+            {
+                Audio.Instance.PlayDoor();
+            }
+
             Door.Animator.SetBool("isOpen", true);
         }
         else if (TapCount == 2)
         {
             Animator.SetBool("isTapped", false);
+
+            if (!IsPlayDoor)
+            {
+                Audio.Instance.PlayDoor();
+
+                IsPlayDoor = true;
+            }
+
             Door.Animator.SetBool("isOpen", false);
         }
     }
