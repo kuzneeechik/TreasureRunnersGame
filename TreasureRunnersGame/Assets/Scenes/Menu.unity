@@ -350,6 +350,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &184874672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184874674}
+  - component: {fileID: 184874673}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &184874673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184874672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888e37f1cc2d9a8459f4a3860b5ca2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Background: {fileID: 8300000, guid: 697b9a9bb4a39004c80b3762e6289dd6, type: 3}
+  Death: {fileID: 8300000, guid: 239370c4f2405dc49be1df0e62d14f9e, type: 3}
+  Artefact: {fileID: 8300000, guid: c7fce500d5bee4a4792c2c87e3200361, type: 3}
+  Door: {fileID: 8300000, guid: 0768262ee9078ec47bcf2caf4799caa1, type: 3}
+  Portal: {fileID: 8300000, guid: 54b602ecf36e57d42b82954a1335d138, type: 3}
+  End: {fileID: 8300000, guid: 463223effacc5554c819d02c95da610f, type: 3}
+--- !u!4 &184874674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184874672}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.17, y: 3.44, z: 0.99420625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &202105405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,3 +1812,4 @@ SceneRoots:
   - {fileID: 2013976492}
   - {fileID: 1826526930}
   - {fileID: 432191768}
+  - {fileID: 184874674}

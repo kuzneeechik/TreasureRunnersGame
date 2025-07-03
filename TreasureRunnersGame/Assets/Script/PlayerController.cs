@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
 
     public bool IsAlive = true;
     private float Deep = -6f;
+
+    private bool IsDeathPlay = false;
     
     private void Start()
     {
@@ -155,8 +157,17 @@ public class PlayerController : MonoBehaviour
     private void Die()
     {
         IsAlive = false;
+
+        if (!IsDeathPlay)
+        {
+            Audio.Instance.PlayDeath();
+
+            IsDeathPlay = true;
+        }
+
         Animator.SetBool("isAlive", false);
         Invoke("ShowGameOverCanvas", 2.5f);
+
         if (SaveLevel.Instance != null)
         {
             SaveLevel.Instance.ResetLevel();

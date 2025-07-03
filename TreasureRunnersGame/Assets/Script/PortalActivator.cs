@@ -19,6 +19,8 @@ public class PortalActivator : MonoBehaviour
 
     public ChangeScene ChangeScene;
 
+    private bool IsPortalPlay = false;
+
     private void Start()
     {
         if (Portal != null)
@@ -67,6 +69,11 @@ public class PortalActivator : MonoBehaviour
             Vector2.Distance(transform.position, Player2.position) < Distance))
         {
             Portal.SetActive(true);
+
+            if (!IsPortalPlay)
+            {
+                Audio.Instance.PlayPortal();
+            }
 
             IsActive = true;
         }

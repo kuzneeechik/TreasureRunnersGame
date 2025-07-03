@@ -11,6 +11,8 @@ public class Lever : MonoBehaviour
 
     public string Id;
 
+    public bool IsPlayDoor = false;
+
     private void Start()
     {
         Animator = GetComponent<Animator>();
@@ -46,6 +48,14 @@ public class Lever : MonoBehaviour
     private void ActivateLever()
     {
         Animator.SetBool("isTapped", true);
+
+        if (!IsPlayDoor)
+        {
+            Audio.Instance.PlayDoor();
+
+            IsPlayDoor = true;
+        }
+
         Door.Animator.SetBool("isOpen", true);
 
         IsTapped = true;

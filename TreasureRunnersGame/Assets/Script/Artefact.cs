@@ -21,6 +21,7 @@ public class Artefact : MonoBehaviour
                 SaveLevel.Instance.AddArtifact(Id);
             }
 
+            Audio.Instance.PlayArtefact();
             Destroy(gameObject);
         }
     }

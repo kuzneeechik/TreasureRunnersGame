@@ -15,6 +15,8 @@ public class End : MonoBehaviour
 
     private Collider2D doorCollider;
 
+    private bool isEndPlay = false;
+
     private void Start()
     {
         doorCollider = GetComponent<Collider2D>();
@@ -66,6 +68,13 @@ public class End : MonoBehaviour
     private void WinLevel()
     {
         winUI.SetActive(true);
+
+        if (!isEndPlay)
+        {
+            Audio.Instance.PlayEnd();
+
+            isEndPlay = true;
+        }
         
         SaveLevel.Instance.AddLevel(Id);
         SaveLevel.Instance.MoveArtifactsToGlobal();
